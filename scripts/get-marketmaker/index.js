@@ -11,7 +11,7 @@ const decompress = require('decompress');
 The hash used in `marketmaker.hashes` is SHA512.
 */
 
-const baseUrl = 'http://195.201.0.6/mm2/';
+const baseUrl = 'https://github.com/KomodoPlatform/atomicDEX-API/releases/download/beta-2.0.2422/';
 
 const cacheDirectory = path.join(os.homedir(), '.marketmaker');
 
@@ -59,7 +59,7 @@ const main = async () => {
 
 	await Promise.all(osNames.map(async osName => {
 		const expectedHash = hashes[osNameMap.get(osName)];
-		const filename = `mm2-${version}-${osName}.zip`;
+		const filename = `mm2-${version}-${osName}-Release.zip`;
 		const cachedBuildPath = path.join(cacheDirectory, filename);
 
 		if (fs.existsSync(cachedBuildPath)) {

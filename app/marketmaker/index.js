@@ -91,7 +91,7 @@ class Marketmaker {
 
 		options = {
 			...options,
-			gui: 'hyperdex',
+			gui: 'hyperdex_testing',
 			userhome: os.homedir(),
 			netid: 9999, // TODO: Set this to `0` when mm v2 is production ready
 			rpcport: port,

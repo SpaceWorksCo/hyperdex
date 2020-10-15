@@ -24,12 +24,8 @@ exports.appViews = [
 ];
 
 exports.defaultEnabledCurrencies = [
-	'CHIPS',
-	'DOGE',
+	'SPACE',
 	'KMD',
-	'MORTY',
-	'RICK',
-	'SUPERNET',
 
 	// These are left out for now.
 	// TODO: Revise this list when HyperDEX is more mature.
@@ -48,10 +44,11 @@ exports.defaultEnabledCurrencies = [
 
 exports.alwaysEnabledCurrencies = [
 	'KMD',
-	'CHIPS',
+	'SPACE',
 ];
 
 exports.ignoreExternalPrice = new Set([
+	'SPACE',
 	'CALL',
 	'MORTY',
 	'REVS',

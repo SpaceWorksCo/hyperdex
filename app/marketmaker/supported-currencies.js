@@ -944,6 +944,9 @@ const supportedCurrencies = [
 		txversion: 4,
 		overwintered: 1,
 		txfee: 1000,
+		protocol: {
+			type: 'UTXO'
+		},
 		electrumServers: [
 			{
 				host: 'electrum1.cipig.net',
@@ -1618,6 +1621,28 @@ const supportedCurrencies = [
 		name: 'Status',
 		contractAddress: '0x744d70FDBE2Ba4CF95131626614a1763DF805B9E',
 		rpcport: 80,
+	},
+	{
+		coin: 'SPACE',
+		name: 'Spacecoin',
+		asset: 'SPACE',
+		rpcport: 35593,
+		txversion: 4,
+		overwintered: 1,
+		required_confirmations: 6,
+		protocol: {
+			type: 'UTXO'
+		},
+		electrumServers: [
+			{
+				host: 'electrum1.spaceworks.co',
+				port: 50001,
+			},
+			{
+				host: 'electrum2.spaceworks.co',
+				port: 50001,
+			},
+		],
 	},
 	{
 		coin: 'SPANK',

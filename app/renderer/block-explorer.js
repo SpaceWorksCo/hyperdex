@@ -112,6 +112,7 @@ const explorers = new Map(Object.entries({
 	SEQ: 'https://seq.blocksandchain.com/tx/{txid}',
 	SMART: 'https://explorer3.smartcash.cc/tx/{txid}',
 	SMC: 'http://smartchain.cc/tx/{txid}',
+	SPACE: 'https://explorer.spaceworks.co/tx/{txid}',
 	SPK: 'http://explorer.sparkscoin.io/tx/{txid}',
 	STRAT: 'https://cryptobe.com/tx/{txid}',
 	SUPERNET: 'https://supernet.kmdexplorer.io/tx/{txid}',

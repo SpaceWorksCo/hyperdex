@@ -943,6 +943,7 @@ const supportedCurrencies = [
 		wiftype: 188,
 		txversion: 4,
 		overwintered: 1,
+		mm2: 1,
 		txfee: 1000,
 		protocol: {
 			type: 'UTXO'
@@ -1629,6 +1630,7 @@ const supportedCurrencies = [
 		rpcport: 35593,
 		txversion: 4,
 		overwintered: 1,
+		mm2: 1,
 		required_confirmations: 6,
 		protocol: {
 			type: 'UTXO'

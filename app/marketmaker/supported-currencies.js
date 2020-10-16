@@ -11,6 +11,22 @@ We use the `name` property only when the currency is not on `coinmarketcap.com`.
 
 const supportedCurrencies = [
 	{
+		coin: 'AWC',
+		name: 'atomic-wallet-coin',
+		fname: 'Atomic Wallet Coin',
+		avg_blocktime: 0.25,
+		rpcport: 80,
+		mm2: 1,
+		required_confirmations: 3,
+		protocol: {
+			type: 'ERC20',
+			protocol_data: {
+				platform: 'ETH',
+				contract_address: '0xaD22f63404f7305e4713CcBd4F296f34770513f4',
+			},
+		},
+	},
+	{
 		coin: 'BAT',
 		name: 'Basic Attention Token',
 		rpcport: 80,
@@ -176,6 +192,22 @@ const supportedCurrencies = [
 		],
 	},
 	{
+		coin: 'BUSD',
+		name: 'binance-usd',
+		fname: 'Binance USD',
+		avg_blocktime: 0.25,
+		rpcport: 80,
+		mm2: 1,
+		required_confirmations: 3,
+		protocol: {
+			type: 'ERC20',
+			protocol_data: {
+				platform: 'ETH',
+				contract_address: '0x4Fabb145d64652a948d72533023f6E7A623C7C53',
+			},
+		},
+	},
+	{
 		coin: 'CHIPS',
 		name: 'Chips',
 		rpcport: 57776,
@@ -293,7 +325,7 @@ const supportedCurrencies = [
 	},
 	{
 		coin: 'DAI',
-		name: 'Dai',
+		name: 'Multi-collateral DAI',
 		rpcport: 80,
 		mm2: 1,
 		required_confirmations: 3,
@@ -302,7 +334,7 @@ const supportedCurrencies = [
 			type: 'ERC20',
 			protocol_data: {
 				platform: 'ETH',
-				contract_address: '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359',
+				contract_address: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
 			},
 		},
 	},
@@ -650,6 +682,34 @@ const supportedCurrencies = [
 			{
 				host: 'electrum3.cipig.net',
 				port: 10001,
+			},
+		],
+	},
+	{
+		coin: 'LABS',
+		name: 'KMD Labs',
+		asset: 'LABS',
+		rpcport: 40265,
+		txversion: 4,
+		overwintered: 1,
+		mm2: 1,
+		required_confirmations: 5,
+		avg_blocktime: 1,
+		protocol: {
+			type: 'UTXO',
+		},
+		electrumServers: [
+			{
+				host: 'electrum1.cipig.net',
+				port: 10019,
+			},
+			{
+				host: 'electrum2.cipig.net',
+				port: 10019,
+			},
+			{
+				host: 'electrum2.cipig.net',
+				port: 10019,
 			},
 		],
 	},
@@ -1092,6 +1152,21 @@ const supportedCurrencies = [
 			protocol_data: {
 				platform: 'ETH',
 				contract_address: '0x0000000000085d4780B73119b644AE5ecd22b376',
+			},
+		},
+	},
+	{
+		coin: 'USDC',
+		name: 'USD Coin',
+		rpcport: 80,
+		mm2: 1,
+		required_confirmations: 3,
+		avg_blocktime: 0.25,
+		protocol: {
+			type: 'ERC20',
+			protocol_data: {
+				platform: 'ETH',
+				contract_address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
 			},
 		},
 	},

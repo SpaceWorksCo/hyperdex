@@ -24,8 +24,8 @@ exports.appViews = [
 ];
 
 exports.defaultEnabledCurrencies = [
-	'SPACE',
 	'KMD',
+	'SPACE',
 
 	// These are left out for now.
 	// TODO: Revise this list when HyperDEX is more mature.

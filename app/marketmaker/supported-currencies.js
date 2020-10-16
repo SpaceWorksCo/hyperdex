@@ -1149,6 +1149,9 @@ const supportedCurrencies = [
 		txversion: 4,
 		overwintered: 1,
 		mm2: 1,
+		protocol: {
+			type: 'UTXO'
+		},
 		electrumServers: [
 			{
 				host: 'electrum1.cipig.net',
@@ -1403,6 +1406,9 @@ const supportedCurrencies = [
 		txversion: 4,
 		overwintered: 1,
 		mm2: 1,
+		protocol: {
+			type: 'UTXO'
+		},
 		electrumServers: [
 			{
 				host: 'electrum1.cipig.net',

@@ -439,7 +439,7 @@ const supportedCurrencies = [
 	},
 	{
 		coin: 'EMC2',
-		name: 'Einsteinium'
+		name: 'Einsteinium',
 		rpcport: 41879,
 		pubtype: 33,
 		p2shtype: 5,
@@ -1214,7 +1214,7 @@ const supportedCurrencies = [
 	},
 	{
 		coin: 'ZEC',
-		name: 'Zcash'
+		name: 'Zcash',
 		rpcport: 8232,
 		taddr: 28,
 		pubtype: 184,

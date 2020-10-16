@@ -9,7 +9,7 @@ import Swaps from './Swaps';
 import './Exchange.scss';
 
 const Exchange = () => {
-	exchangeContainer.watchOrderBook();
+	exchangeContainer.watchOrderBook().then();
 
 	return (
 		<Subscribe to={[exchangeContainer]}>

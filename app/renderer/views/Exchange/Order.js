@@ -92,12 +92,15 @@ const Center = props => {
 					<tbody>
 						{(() => {
 							/* eslint-disable react/no-array-index-key */
-							return props.getOrderBook().map((row, i) => (
-								<tr key={i} onClick={() => selectRow(row)}>
-									<td>{row.price}</td>
-									<td>{roundTo(row.maxVolume, 8)}</td>
-								</tr>
-							));
+							let data = props.getOrderBook();
+							if (data !== undefined) {
+								return props.getOrderBook().map((row, i) => (
+									<tr key={i} onClick={() => selectRow(row)}>
+										<td>{row.price}</td>
+										<td>{roundTo(parseInt(row.maxVolume), 8)}</td>
+									</tr>
+								));
+							}
 							/* eslint-enable react/no-array-index-key */
 						})()}
 					</tbody>

@@ -158,10 +158,12 @@ export default class Api {
 	async disableCurrency(symbol) {
 		ow(symbol, 'symbol', symbolPredicate);
 
-		return this.request({
+		const {result} = await this.request({
 			method: 'disable_coin',
 			coin: symbol,
 		});
+
+		return result;
 	}
 
 	// Mm v2

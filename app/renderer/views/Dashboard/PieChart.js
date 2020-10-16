@@ -1,5 +1,5 @@
 import React from 'react';
-import {PieChart as Chart, Pie, ResponsiveContainer, Tooltip} from 'recharts';
+import {Pie, PieChart as Chart, ResponsiveContainer, Tooltip} from 'recharts';
 import appContainer from 'containers/App';
 import dashboardContainer from 'containers/Dashboard';
 import {formatCurrency} from '../../util';

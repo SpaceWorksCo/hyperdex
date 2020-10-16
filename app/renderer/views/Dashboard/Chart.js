@@ -62,20 +62,20 @@ const Chart = () => {
 			<div className="overlay">
 				<h3>{activeView === 'Portfolio' ? t('chart.portfolioValue') : t('chart.symbolChart', {symbol})}</h3>
 				{hasDataInAtLeastOneResolution &&
-					<div className="resolution-buttons">
-						<ResolutionButton title="1h" resolution="hour"/>
-						<ResolutionButton title="1d" resolution="day"/>
-						<ResolutionButton title="1w" resolution="week"/>
-						<ResolutionButton title="1m" resolution="month"/>
-						<ResolutionButton title="1y" resolution="year"/>
-						<ResolutionButton title="All" resolution="all"/>
-					</div>
+				<div className="resolution-buttons">
+					<ResolutionButton title="1h" resolution="hour"/>
+					<ResolutionButton title="1d" resolution="day"/>
+					<ResolutionButton title="1w" resolution="week"/>
+					<ResolutionButton title="1m" resolution="month"/>
+					<ResolutionButton title="1y" resolution="year"/>
+					<ResolutionButton title="All" resolution="all"/>
+				</div>
 				}
 			</div>
 			{!data &&
-				<div className="Empty">
-					<p>{t('chart.noData')}</p>
-				</div>
+			<div className="Empty">
+				<p>{t('chart.noData')}</p>
+			</div>
 			}
 		</div>
 	);

@@ -1,5 +1,5 @@
 import {remote} from 'electron';
-import {is, activeWindow} from 'electron-util';
+import {activeWindow, is} from 'electron-util';
 import React from 'react';
 import Button from 'components/Button';
 import Avatar from 'components/Avatar';

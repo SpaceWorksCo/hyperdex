@@ -84,25 +84,25 @@ const Center = props => {
 			<div className="table-wrapper">
 				<table>
 					<thead>
-						<tr>
-							<th>{t('order.price', {symbol: state.quoteCurrency})}</th>
-							<th>{t('order.maxVolume')}</th>
-						</tr>
+					<tr>
+						<th>{t('order.price', {symbol: state.quoteCurrency})}</th>
+						<th>{t('order.maxVolume')}</th>
+					</tr>
 					</thead>
 					<tbody>
-						{(() => {
-							/* eslint-disable react/no-array-index-key */
-							let data = props.getOrderBook();
-							if (data !== undefined) {
-								return props.getOrderBook().map((row, i) => (
-									<tr key={i} onClick={() => selectRow(row)}>
-										<td>{row.price}</td>
-										<td>{roundTo(parseInt(row.maxVolume), 8)}</td>
-									</tr>
-								));
-							}
-							/* eslint-enable react/no-array-index-key */
-						})()}
+					{(() => {
+						/* eslint-disable react/no-array-index-key */
+						let data = props.getOrderBook();
+						if (data !== undefined) {
+							return props.getOrderBook().map((row, i) => (
+								<tr key={i} onClick={() => selectRow(row)}>
+									<td>{row.price}</td>
+									<td>{roundTo(parseInt(row.maxVolume), 8)}</td>
+								</tr>
+							));
+						}
+						/* eslint-enable react/no-array-index-key */
+					})()}
 					</tbody>
 				</table>
 			</div>
@@ -273,9 +273,9 @@ class Bottom extends React.Component {
 							onChange={this.props.handleTotalChange}
 						/>
 						{Number(this.props.total) > 0 &&
-							<p className="swap-worth">
-								{t('order.worth', {swapWorthInUsd})}
-							</p>
+						<p className="swap-worth">
+							{t('order.worth', {swapWorthInUsd})}
+						</p>
 						}
 					</div>
 					<div className="form-section">

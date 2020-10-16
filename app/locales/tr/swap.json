@@ -1,67 +1,67 @@
 {
-	"tempMessageDescription": "Minimal kullanıcı etkileşimine sahip basit atomik takaslar",
-	"tempMessageTitle": "Çok yakında…",
-	"timedOut": "Takas zaman aşımına uğradı",
-	"title": "Takas Et",
-	"details": {
-		"aliceclaim": "Alice Claim",
-		"alicereclaim": "Alice Reclaim",
-		"alicepayment": "Alice Ödeme",
-		"alicespend": "Alice Harcama",
-		"bobdeposit": "Bob Para Yatırma",
-		"bobpayment": "Bob Ödeme",
-		"broadcast": "Sunulan",
-		"buy": "Satın Alınan",
-		"copyDebugData": "Takas Ayıklama Verisini Kopyala",
-		"exchanging": "Verilen",
-		"executed": "Gerçekleştirilen",
-		"for": "İstenen",
-		"myfee": "Ücretim",
-		"order": "Emri",
-		"requested": "Talep Edilen",
-		"pending": "Beklemede",
-		"price": "Fiyat",
-		"sell": "Sat",
-		"stats": "Gerçekte verilen fiyat talep edilenden %{{percentCheaperThanRequested}} daha azdı!",
-		"transactions": "İşlemler",
-		"youExchanged": "Verdiğin",
-		"youReceived": "Aldığın",
-		"yourOffer": "Teklifin",
-		"view": "Göster"
-	},
-	"list": {
-		"baseAmount": "Base amount",
-		"date": "Tarih",
-		"cancel": "İptal",
-		"empty": "No orders",
-		"pair": "Eşleştir",
-		"quoteAmount": "Teklif edilen tutar",
-		"status": "Durum"
-	},
-	"status": {
-		"completed": "Tamamlandı",
-		"failed": "Başarısız",
-		"matched": "Eşleşti",
-		"reverted": "Geri alındı",
-		"pending": "Beklemede",
-		"open": "Open",
-		"unmatched": "Eşleşen yok",
-		"cancelled": "Cancelled"
-	},
-	"statusInformation": {
-		"reverted": "The swap was reverted due to connectivity issues."
-	},
-	"toggleAdvancedButton": {
-		"more": "More",
-		"less": "Less"
-	},
-	"filter": {
-		"buy": "Buy",
-		"date": "Date",
-		"dateFrom": "From",
-		"dateTo": "To",
-		"pair": "Pair",
-		"sell": "Sell",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Minimal kullanıcı etkileşimine sahip basit atomik takaslar",
+  "tempMessageTitle": "Çok yakında…",
+  "timedOut": "Takas zaman aşımına uğradı",
+  "title": "Takas Et",
+  "details": {
+	"aliceclaim": "Alice Claim",
+	"alicereclaim": "Alice Reclaim",
+	"alicepayment": "Alice Ödeme",
+	"alicespend": "Alice Harcama",
+	"bobdeposit": "Bob Para Yatırma",
+	"bobpayment": "Bob Ödeme",
+	"broadcast": "Sunulan",
+	"buy": "Satın Alınan",
+	"copyDebugData": "Takas Ayıklama Verisini Kopyala",
+	"exchanging": "Verilen",
+	"executed": "Gerçekleştirilen",
+	"for": "İstenen",
+	"myfee": "Ücretim",
+	"order": "Emri",
+	"requested": "Talep Edilen",
+	"pending": "Beklemede",
+	"price": "Fiyat",
+	"sell": "Sat",
+	"stats": "Gerçekte verilen fiyat talep edilenden %{{percentCheaperThanRequested}} daha azdı!",
+	"transactions": "İşlemler",
+	"youExchanged": "Verdiğin",
+	"youReceived": "Aldığın",
+	"yourOffer": "Teklifin",
+	"view": "Göster"
+  },
+  "list": {
+	"baseAmount": "Base amount",
+	"date": "Tarih",
+	"cancel": "İptal",
+	"empty": "No orders",
+	"pair": "Eşleştir",
+	"quoteAmount": "Teklif edilen tutar",
+	"status": "Durum"
+  },
+  "status": {
+	"completed": "Tamamlandı",
+	"failed": "Başarısız",
+	"matched": "Eşleşti",
+	"reverted": "Geri alındı",
+	"pending": "Beklemede",
+	"open": "Open",
+	"unmatched": "Eşleşen yok",
+	"cancelled": "Cancelled"
+  },
+  "statusInformation": {
+	"reverted": "The swap was reverted due to connectivity issues."
+  },
+  "toggleAdvancedButton": {
+	"more": "More",
+	"less": "Less"
+  },
+  "filter": {
+	"buy": "Buy",
+	"date": "Date",
+	"dateFrom": "From",
+	"dateTo": "To",
+	"pair": "Pair",
+	"sell": "Sell",
+	"type": "Type"
+  }
 }

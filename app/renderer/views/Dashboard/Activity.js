@@ -55,11 +55,11 @@ const ActivityList = ({items}) => {
 		<div className="ActivityList">
 			<table>
 				<tbody>
-					{
-						items.map(swap => (
-							<ActivityItem key={swap.uuid} swap={swap}/>
-						))
-					}
+				{
+					items.map(swap => (
+						<ActivityItem key={swap.uuid} swap={swap}/>
+					))
+				}
 				</tbody>
 			</table>
 		</div>

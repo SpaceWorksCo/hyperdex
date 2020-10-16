@@ -1,30 +1,30 @@
 {
-	"app": "Uygulama",
-	"deletePortfolio": {
-		"confirm": "Bu portföy'ü silmek istediğime Eminim",
-		"description": "<0>Unless you save your seed phrase, this action cannot be undone and will permanently delete the <1><0>{{name}}</0></1> portfolio.</0><1>Please type in the name of the portfolio to confirm.</1>",
-		"title": "Portföyü Kaldır"
-	},
-	"enabledCurrencies": "Etkin para birimleri",
-	"logOutAppSettings": "<0><0>Daha fazla uygulama ayarı görmek için</0>çıkış yap.</0>",
-	"name": "İsim",
-	"manage": "Yönet",
-	"export": {
-		"sectionLabel": "Dışa aktar",
-		"exportTradeHistory": "Ticaret geçmiş CSV dosyasına çıkar",
-		"trades": "takas"
-	},
-	"portfolio": "Portföy",
-	"seedPhrase": {
-		"enterPassword": "Şifre giriniz",
-		"submit": "Gönder",
-		"title": "View Seed Phrase"
-	},
-	"title": "Ayarlar",
-	"theme": {
-		"theme": "Tema",
-		"dark": "Koyu",
-		"light": "Açık",
-		"system": "Sistem"
-	}
+  "app": "Uygulama",
+  "deletePortfolio": {
+	"confirm": "Bu portföy'ü silmek istediğime Eminim",
+	"description": "<0>Unless you save your seed phrase, this action cannot be undone and will permanently delete the <1><0>{{name}}</0></1> portfolio.</0><1>Please type in the name of the portfolio to confirm.</1>",
+	"title": "Portföyü Kaldır"
+  },
+  "enabledCurrencies": "Etkin para birimleri",
+  "logOutAppSettings": "<0><0>Daha fazla uygulama ayarı görmek için</0>çıkış yap.</0>",
+  "name": "İsim",
+  "manage": "Yönet",
+  "export": {
+	"sectionLabel": "Dışa aktar",
+	"exportTradeHistory": "Ticaret geçmiş CSV dosyasına çıkar",
+	"trades": "takas"
+  },
+  "portfolio": "Portföy",
+  "seedPhrase": {
+	"enterPassword": "Şifre giriniz",
+	"submit": "Gönder",
+	"title": "View Seed Phrase"
+  },
+  "title": "Ayarlar",
+  "theme": {
+	"theme": "Tema",
+	"dark": "Koyu",
+	"light": "Açık",
+	"system": "Sistem"
+  }
 }

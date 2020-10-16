@@ -1,6 +1,6 @@
 {
-	"openOrders": "Открытые ордера",
-	"tradeHistory": "Trade History",
-	"stats": "За последний месяц у вас было успешных сделок: {{count}}; количество валют: {{currencyCount}}; итоговой стоимостью: {{totalSwapsWorthInUsd}}",
-	"stats_plural": "За последний месяц у вас было успешных сделок: {{count}}; количество валют: {{currencyCount}}; итоговой стоимостью: {{totalSwapsWorthInUsd}}"
+  "openOrders": "Открытые ордера",
+  "tradeHistory": "Trade History",
+  "stats": "За последний месяц у вас было успешных сделок: {{count}}; количество валют: {{currencyCount}}; итоговой стоимостью: {{totalSwapsWorthInUsd}}",
+  "stats_plural": "За последний месяц у вас было успешных сделок: {{count}}; количество валют: {{currencyCount}}; итоговой стоимостью: {{totalSwapsWorthInUsd}}"
 }

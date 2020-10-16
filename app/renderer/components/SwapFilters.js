@@ -162,7 +162,8 @@ SwapFilters.propTypes = {
 };
 
 SwapFilters.defaultProps = {
-	children: () => {},
+	children: () => {
+	},
 	swaps: [],
 };
 

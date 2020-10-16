@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "ترجیحات…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "ویب سائٹ",
-		"sourceCode": "سورس کوڈ",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "مسئلے کو رپورٹ کریں…",
-		"about": "{{appName}} کے بارے میں"
-	},
-	"other": {
-		"file": "فائل"
-	},
-	"portfolio": {
-		"title": "پورٹ فولیو",
-		"dashboard": "ڈیش بورڈ",
-		"swap": "سویپ کریں",
-		"exchange": "تبادلہ",
-		"trades": "ٹریڈز",
-		"settings": "سیٹنگیز",
-		"goToPrevView": "پچھلے منظر پر جائیں",
-		"goToNextView": "اگلے منظر پر جائیں",
-		"logOut": "لاگ آؤٹ"
-	}
+  "app": {
+	"preferences": "ترجیحات…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "ویب سائٹ",
+	"sourceCode": "سورس کوڈ",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "مسئلے کو رپورٹ کریں…",
+	"about": "{{appName}} کے بارے میں"
+  },
+  "other": {
+	"file": "فائل"
+  },
+  "portfolio": {
+	"title": "پورٹ فولیو",
+	"dashboard": "ڈیش بورڈ",
+	"swap": "سویپ کریں",
+	"exchange": "تبادلہ",
+	"trades": "ٹریڈز",
+	"settings": "سیٹنگیز",
+	"goToPrevView": "پچھلے منظر پر جائیں",
+	"goToNextView": "اگلے منظر پر جائیں",
+	"logOut": "لاگ آؤٹ"
+  }
 }

@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Preferencias…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Página web",
-		"sourceCode": "Código fuente",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Notificar un error…",
-		"about": "Acerca de {{appName}}"
-	},
-	"other": {
-		"file": "Archivo"
-	},
-	"portfolio": {
-		"title": "Cartera",
-		"dashboard": "Panel de control",
-		"swap": "Cambio",
-		"exchange": "Intercambio",
-		"trades": "Operaciones",
-		"settings": "Ajustes",
-		"goToPrevView": "Ir a la vista anterior",
-		"goToNextView": "Ir a la vista siguiente",
-		"logOut": "Cerrar Sesión"
-	}
+  "app": {
+	"preferences": "Preferencias…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Página web",
+	"sourceCode": "Código fuente",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Notificar un error…",
+	"about": "Acerca de {{appName}}"
+  },
+  "other": {
+	"file": "Archivo"
+  },
+  "portfolio": {
+	"title": "Cartera",
+	"dashboard": "Panel de control",
+	"swap": "Cambio",
+	"exchange": "Intercambio",
+	"trades": "Operaciones",
+	"settings": "Ajustes",
+	"goToPrevView": "Ir a la vista anterior",
+	"goToNextView": "Ir a la vista siguiente",
+	"logOut": "Cerrar Sesión"
+  }
 }

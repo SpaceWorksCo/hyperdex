@@ -1,22 +1,22 @@
 @import '../styles/variables';
 
 .Progress {
-	display: flex;
-	width: 100%;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
 
-	&__bar {
-		position: relative;
-		width: 0;
-		height: 5px;
-		background: var(--progress-gradient);
-		transition: width 0.5s, background 0.5s;
-	}
+  &__bar {
+	position: relative;
+	width: 0;
+	height: 5px;
+	background: var(--progress-gradient);
+	transition: width 0.5s, background 0.5s;
+  }
 
-	&__label {
-		@include center-vertically;
-		right: -34px;
-		font-size: 11px;
-		color: var(--text-color-opacity-0-5);
-	}
+  &__label {
+	@include center-vertically;
+	right: -34px;
+	font-size: 11px;
+	color: var(--text-color-opacity-0-5);
+  }
 }

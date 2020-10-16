@@ -1,12 +1,12 @@
 {
-	"settings": {
-		"customUrl": "URL เฉพาะของผู้กำหนดตลาด (Marketmaker)",
-		"exampleUrl": "ตัวอย่าง: {{url}}",
-		"invalidUrl": "URL ไม่ถูกต้อง",
-		"title": "การตั้งค่าแอปพลิเคชัน"
-	},
-	"donate": {
-		"title": "Donate",
-		"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
-	}
+  "settings": {
+	"customUrl": "URL เฉพาะของผู้กำหนดตลาด (Marketmaker)",
+	"exampleUrl": "ตัวอย่าง: {{url}}",
+	"invalidUrl": "URL ไม่ถูกต้อง",
+	"title": "การตั้งค่าแอปพลิเคชัน"
+  },
+  "donate": {
+	"title": "Donate",
+	"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
+  }
 }

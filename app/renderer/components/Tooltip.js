@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {classNames} from 'react-extras';
-import {Manager, Popper, Reference, placements} from 'react-popper';
+import {Manager, placements, Popper, Reference} from 'react-popper';
 import CSSTransition from 'react-transition-group/CSSTransition';
 import './Tooltip.scss';
 

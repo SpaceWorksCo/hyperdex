@@ -6,21 +6,6 @@ import appContainer from 'containers/App';
 import fireEvery from '../fire-every';
 
 class ExchangeContainer extends SuperContainer {
-	getInitialState() {
-		return {
-			baseCurrency: 'SPACE',
-			quoteCurrency: 'KMD',
-			activeSwapsView: 'OpenOrders',
-			orderBook: {
-				bids: [],
-				asks: [],
-				biddepth: 0,
-				askdepth: 0,
-			},
-			isSendingOrder: false,
-		};
-	}
-
 	events = new EventEmitter();
 
 	constructor() {
@@ -41,6 +26,21 @@ class ExchangeContainer extends SuperContainer {
 				this.setQuoteCurrency(newQuoteCurrency);
 			}
 		});
+	}
+
+	getInitialState() {
+		return {
+			baseCurrency: 'SPACE',
+			quoteCurrency: 'KMD',
+			activeSwapsView: 'OpenOrders',
+			orderBook: {
+				bids: [],
+				asks: [],
+				biddepth: 0,
+				askdepth: 0,
+			},
+			isSendingOrder: false,
+		};
 	}
 
 	setBaseCurrency(baseCurrency) {

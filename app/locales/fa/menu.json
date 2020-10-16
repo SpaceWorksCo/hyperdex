@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "ترجیحات…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "وب‌سایت",
-		"sourceCode": "متن برنامه",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "گزارش دادن مشکل…",
-		"about": "درباره {{appName}}"
-	},
-	"other": {
-		"file": "فایل"
-	},
-	"portfolio": {
-		"title": "سبد سهام",
-		"dashboard": "داشبورد",
-		"swap": "جابجایی",
-		"exchange": "تبادل",
-		"trades": "معاملات",
-		"settings": "تنظیمات",
-		"goToPrevView": "رفتن به نمای قبلی",
-		"goToNextView": "رفتن به نمای بعدی",
-		"logOut": "خروج"
-	}
+  "app": {
+	"preferences": "ترجیحات…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "وب‌سایت",
+	"sourceCode": "متن برنامه",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "گزارش دادن مشکل…",
+	"about": "درباره {{appName}}"
+  },
+  "other": {
+	"file": "فایل"
+  },
+  "portfolio": {
+	"title": "سبد سهام",
+	"dashboard": "داشبورد",
+	"swap": "جابجایی",
+	"exchange": "تبادل",
+	"trades": "معاملات",
+	"settings": "تنظیمات",
+	"goToPrevView": "رفتن به نمای قبلی",
+	"goToNextView": "رفتن به نمای بعدی",
+	"logOut": "خروج"
+  }
 }

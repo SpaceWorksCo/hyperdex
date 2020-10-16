@@ -1,6 +1,6 @@
 @import '../styles/variables';
 
 .PlusButton {
-	@include icon-button;
-	color: var(--text-color2);
+  @include icon-button;
+  color: var(--text-color2);
 }

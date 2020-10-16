@@ -20,7 +20,7 @@ class ThemeSetting extends React.Component {
 					<option value="dark">{t('theme.dark')}</option>
 					<option value="light">{t('theme.light')}</option>
 					{is.macos &&
-						<option value="system">{t('theme.system')}</option>
+					<option value="system">{t('theme.system')}</option>
 					}
 				</NativeSelect>
 			</div>

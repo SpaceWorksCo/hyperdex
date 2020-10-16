@@ -1,12 +1,12 @@
 {
-	"settings": {
-		"customUrl": "URL Maalum ya Muuzaji Hisa",
-		"exampleUrl": "Mfano: {{url}}",
-		"invalidUrl": "URL si sahihi",
-		"title": "Mipangilio ya programu"
-	},
-	"donate": {
-		"title": "Donate",
-		"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
-	}
+  "settings": {
+	"customUrl": "URL Maalum ya Muuzaji Hisa",
+	"exampleUrl": "Mfano: {{url}}",
+	"invalidUrl": "URL si sahihi",
+	"title": "Mipangilio ya programu"
+  },
+  "donate": {
+	"title": "Donate",
+	"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
+  }
 }

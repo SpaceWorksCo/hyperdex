@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Inställningar…"
-	},
-	"help": {
-		"debugMode": "Debugläge",
-		"website": "Webbplats",
-		"sourceCode": "Källkod",
-		"reportSecurityIssue": "Rapportera ett säkerhetsproblem…",
-		"reportIssue": "Rapportera ett problem…",
-		"about": "Om {{appName}}"
-	},
-	"other": {
-		"file": "Arkiv"
-	},
-	"portfolio": {
-		"title": "Portfölj",
-		"dashboard": "Kontrollpanel",
-		"swap": "Swap",
-		"exchange": "Börs",
-		"trades": "Handel",
-		"settings": "Inställningar",
-		"goToPrevView": "Gå till föregående vy",
-		"goToNextView": "Gå till nästa vy",
-		"logOut": "Logga ut"
-	}
+  "app": {
+	"preferences": "Inställningar…"
+  },
+  "help": {
+	"debugMode": "Debugläge",
+	"website": "Webbplats",
+	"sourceCode": "Källkod",
+	"reportSecurityIssue": "Rapportera ett säkerhetsproblem…",
+	"reportIssue": "Rapportera ett problem…",
+	"about": "Om {{appName}}"
+  },
+  "other": {
+	"file": "Arkiv"
+  },
+  "portfolio": {
+	"title": "Portfölj",
+	"dashboard": "Kontrollpanel",
+	"swap": "Swap",
+	"exchange": "Börs",
+	"trades": "Handel",
+	"settings": "Inställningar",
+	"goToPrevView": "Gå till föregående vy",
+	"goToNextView": "Gå till nästa vy",
+	"logOut": "Logga ut"
+  }
 }

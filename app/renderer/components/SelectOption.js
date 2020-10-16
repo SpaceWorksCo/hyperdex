@@ -4,14 +4,14 @@ import {classNames, Image} from 'react-extras';
 import './SelectOption.scss';
 
 const SelectOption = ({
-	className,
-	label,
-	value,
-	image,
-	fallbackImage,
-	imageRenderer,
-	...props
-}) => {
+						  className,
+						  label,
+						  value,
+						  image,
+						  fallbackImage,
+						  imageRenderer,
+						  ...props
+					  }) => {
 	const hasImage = Boolean(image || imageRenderer);
 
 	const containerClassName = classNames(
@@ -25,7 +25,7 @@ const SelectOption = ({
 	return (
 		<div {...props} className={containerClassName}>
 			{hasImage &&
-				<span className="SelectOption__image-wrap">
+			<span className="SelectOption__image-wrap">
 					{imageRenderer ?
 						imageRenderer({label, value}) :
 						(

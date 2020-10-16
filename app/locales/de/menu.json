@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Einstellungen…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Website",
-		"sourceCode": "Quellcode",
-		"reportSecurityIssue": "Sicherheitsproblem melden…",
-		"reportIssue": "Problem melden…",
-		"about": "Über {{appName}}"
-	},
-	"other": {
-		"file": "Datei"
-	},
-	"portfolio": {
-		"title": "Portfolio",
-		"dashboard": "Dashboard",
-		"swap": "Tausch",
-		"exchange": "Tauschmarkt",
-		"trades": "Geschäfte",
-		"settings": "Einstellungen",
-		"goToPrevView": "Zur vorherigen Ansicht",
-		"goToNextView": "Zur nächsten Ansicht",
-		"logOut": "Ausloggen"
-	}
+  "app": {
+	"preferences": "Einstellungen…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Website",
+	"sourceCode": "Quellcode",
+	"reportSecurityIssue": "Sicherheitsproblem melden…",
+	"reportIssue": "Problem melden…",
+	"about": "Über {{appName}}"
+  },
+  "other": {
+	"file": "Datei"
+  },
+  "portfolio": {
+	"title": "Portfolio",
+	"dashboard": "Dashboard",
+	"swap": "Tausch",
+	"exchange": "Tauschmarkt",
+	"trades": "Geschäfte",
+	"settings": "Einstellungen",
+	"goToPrevView": "Zur vorherigen Ansicht",
+	"goToNextView": "Zur nächsten Ansicht",
+	"logOut": "Ausloggen"
+  }
 }

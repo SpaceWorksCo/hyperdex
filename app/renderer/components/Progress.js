@@ -17,7 +17,7 @@ const Progress = ({value, color, hideWhenZero, showLabel, ...props}) => {
 		<div {...props} className={className}>
 			<div className="Progress__bar" style={{width: percentageFormatted, background: color}}>
 				{showLabel &&
-					<div className="Progress__label">{percentageFormatted}</div>
+				<div className="Progress__label">{percentageFormatted}</div>
 				}
 			</div>
 		</div>

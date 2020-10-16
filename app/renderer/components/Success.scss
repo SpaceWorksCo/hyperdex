@@ -1,18 +1,18 @@
 @import '../styles/variables';
 
 .Success {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: var(--background-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--background-color);
 
-	img {
-		margin-top: 180px;
-	}
+  img {
+	margin-top: 180px;
+  }
 
-	h1 {
-		margin-top: 14px;
-	}
+  h1 {
+	margin-top: 14px;
+  }
 }

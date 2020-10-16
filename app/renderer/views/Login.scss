@@ -1,51 +1,51 @@
 @keyframes Login-fade-in {
-	from {
-		opacity: 0;
-	}
+  from {
+	opacity: 0;
+  }
 
-	to {
-		opacity: 1;
-	}
+  to {
+	opacity: 1;
+  }
 }
 
 .Login {
-	animation-name: Login-fade-in;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  animation-name: Login-fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-	.is-centered > * {
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .is-centered > * {
+	margin-left: auto;
+	margin-right: auto;
+  }
 
-	.window-draggable-area {
-		width: 100%;
-		height: 50px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		-webkit-app-region: drag;
-	}
+  .window-draggable-area {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-app-region: drag;
+  }
 
-	.hyperdex-icon {
-		display: block;
-		margin-bottom: 30px;
-	}
+  .hyperdex-icon {
+	display: block;
+	margin-bottom: 30px;
+  }
 
-	.login-progress {
-		position: absolute;
-		top: 0;
-		z-index: 1;
-	}
+  .login-progress {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+  }
 
-	.form-group {
-		width: 245px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .form-group {
+	width: 245px;
+	margin-left: auto;
+	margin-right: auto;
+  }
 }

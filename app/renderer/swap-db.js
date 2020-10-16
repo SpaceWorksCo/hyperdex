@@ -5,7 +5,7 @@ import cryptoPouch from 'crypto-pouch';
 import Emittery from 'emittery';
 import PQueue from 'p-queue';
 import roundTo from 'round-to';
-import {subDays, isAfter} from 'date-fns';
+import {isAfter, subDays} from 'date-fns';
 import appContainer from 'containers/App';
 import {appTimeStarted} from '../constants';
 import {translate} from './translate';

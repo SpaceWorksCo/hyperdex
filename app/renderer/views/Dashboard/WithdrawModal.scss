@@ -1,71 +1,71 @@
 @import '../../styles/variables';
 
 .WithdrawModal main {
-	.section {
-		margin: 10px 0;
+  .section {
+	margin: 10px 0;
+  }
+
+  label {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--text-color);
+  }
+
+  .amount-inputs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	.Input__view {
+	  word-break: break-all;
+
+	  .long-symbol {
+		font-size: 11px;
+	  }
 	}
 
-	label {
-		font-size: 12px;
-		font-weight: 600;
-		color: var(--text-color);
+	.separator {
+	  margin: 0 20px;
+	  color: var(--text-color);
 	}
 
-	.amount-inputs {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		position: relative;
+	.Link {
+	  position: absolute;
+	  top: -13px;
+	  left: 112px;
+	  line-height: unset;
+	  font-size: 12px;
+	}
+  }
 
-		.Input__view {
-			word-break: break-all;
+  .info {
+	display: flex;
+	justify-content: space-between;
+	transition: opacity 0.2s ease-in;
 
-			.long-symbol {
-				font-size: 11px;
-			}
-		}
-
-		.separator {
-			margin: 0 20px;
-			color: var(--text-color);
-		}
-
-		.Link {
-			position: absolute;
-			top: -13px;
-			left: 112px;
-			line-height: unset;
-			font-size: 12px;
-		}
+	&.hidden {
+	  opacity: 0;
 	}
 
-	.info {
-		display: flex;
-		justify-content: space-between;
-		transition: opacity 0.2s ease-in;
-
-		&.hidden {
-			opacity: 0;
-		}
-
-		span {
-			font-size: 14px;
-			color: var(--text-color);
-		}
-
-		&:first-child {
-			margin-bottom: 20px;
-		}
-
-		.negative-balance {
-			color: var(--red-color);
-		}
+	span {
+	  font-size: 14px;
+	  color: var(--text-color);
 	}
 
-	.withdraw-button,
-	.confirm-button {
-		align-self: center;
-		width: 200px;
-		margin-top: 30px;
+	&:first-child {
+	  margin-bottom: 20px;
 	}
+
+	.negative-balance {
+	  color: var(--red-color);
+	}
+  }
+
+  .withdraw-button,
+  .confirm-button {
+	align-self: center;
+	width: 200px;
+	margin-top: 30px;
+  }
 }

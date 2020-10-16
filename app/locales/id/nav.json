@@ -1,7 +1,7 @@
 {
-	"dashboard": "Dasbor",
-	"exchange": "Pertukaran",
-	"settings": "Pengaturan",
-	"swap": "Swap",
-	"trades": "Trade"
+  "dashboard": "Dasbor",
+  "exchange": "Pertukaran",
+  "settings": "Pengaturan",
+  "swap": "Swap",
+  "trades": "Trade"
 }

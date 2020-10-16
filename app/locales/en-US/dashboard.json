@@ -1,54 +1,54 @@
 {
-	"intro": {
-		"title": "✨ Welcome to HyperDEX!",
-		"description": "<0>Please keep in mind <1>this project is still in Beta</1>.</0><1>Although loss of funds is unlikely, you should only trade with real currency if you can take that risk.</1><2>If you just want to test HyperDEX, try trading between the test currencies <1>RICK</1> and <3>MORTY</3> instead. You can get free <5>RICK</5> <7>here</7> and free <9>MORTY</9> <11>here</11>.</2><3>HyperDEX is Open Source software provided \"as is\", without warranty of any kind. The authors or copyright holders are not liable for any damages caused as a result of using this software.</3><4>By using HyperDEX you are agreeing to the terms of the <1>MIT License</1>.</4>"
-	},
-	"activity": {
-		"noActivity": "No activity yet",
-		"recentActivity": "Recent Activity",
-		"swapTitle": "Trade",
-		"swapDescription": "{{quoteCurrency}} for {{baseCurrency}}"
-	},
-	"chart": {
-		"noData": "No data available",
-		"portfolioValue": "Portfolio Value",
-		"symbolChart": "{{symbol}} Chart"
-	},
-	"deposit": {
-		"copy": "Copy",
-		"copied": "Copied",
-		"label": "Deposit",
-		"title": "Your {{name}} ({{symbol}}) Wallet Address",
-		"warning": "Make sure you only send {{symbol}} to this address"
-	},
-	"info": {
-		"assets": "asset",
-		"assets_plural": "assets",
-		"holdings": "{{symbol}} Holdings",
-		"price": "{{symbol}} Price",
-		"value": "{{symbol}} Holdings Value"
-	},
-	"list": {
-		"addCurrency": "Add Currency",
-		"addCurrencyDescription": "You can choose between 100+ currencies!",
-		"emptyWallet": "Empty wallet",
-		"search": "Search…"
-	},
-	"wallet": {
-		"info": "{{symbol}} Wallet",
-		"recentActivity": "Recent Activity"
-	},
-	"withdraw": {
-		"amountLabel": "Amount",
-		"confirmNetworkFee": "Confirm Transaction Fee",
-		"label": "Withdraw",
-		"maxAmount": "Max",
-		"networkFee": "Transaction Fee",
-		"recipientLabel": "Recipient",
-		"recipientPlaceholder": "Enter {{symbol}} Address",
-		"remainingBalance": "Remaining balance",
-		"successDescription": "{{amount}} {{symbol}} sent to {{address}}",
-		"successTitle": "Successful withdrawal!",
-		"title": "Withdraw {{name}} ({{symbol}})"
-	}
+  "intro": {
+	"title": "✨ Welcome to HyperDEX!",
+	"description": "<0>Please keep in mind <1>this project is still in Beta</1>.</0><1>Although loss of funds is unlikely, you should only trade with real currency if you can take that risk.</1><2>If you just want to test HyperDEX, try trading between the test currencies <1>RICK</1> and <3>MORTY</3> instead. You can get free <5>RICK</5> <7>here</7> and free <9>MORTY</9> <11>here</11>.</2><3>HyperDEX is Open Source software provided \"as is\", without warranty of any kind. The authors or copyright holders are not liable for any damages caused as a result of using this software.</3><4>By using HyperDEX you are agreeing to the terms of the <1>MIT License</1>.</4>"
+  },
+  "activity": {
+	"noActivity": "No activity yet",
+	"recentActivity": "Recent Activity",
+	"swapTitle": "Trade",
+	"swapDescription": "{{quoteCurrency}} for {{baseCurrency}}"
+  },
+  "chart": {
+	"noData": "No data available",
+	"portfolioValue": "Portfolio Value",
+	"symbolChart": "{{symbol}} Chart"
+  },
+  "deposit": {
+	"copy": "Copy",
+	"copied": "Copied",
+	"label": "Deposit",
+	"title": "Your {{name}} ({{symbol}}) Wallet Address",
+	"warning": "Make sure you only send {{symbol}} to this address"
+  },
+  "info": {
+	"assets": "asset",
+	"assets_plural": "assets",
+	"holdings": "{{symbol}} Holdings",
+	"price": "{{symbol}} Price",
+	"value": "{{symbol}} Holdings Value"
+  },
+  "list": {
+	"addCurrency": "Add Currency",
+	"addCurrencyDescription": "You can choose between 100+ currencies!",
+	"emptyWallet": "Empty wallet",
+	"search": "Search…"
+  },
+  "wallet": {
+	"info": "{{symbol}} Wallet",
+	"recentActivity": "Recent Activity"
+  },
+  "withdraw": {
+	"amountLabel": "Amount",
+	"confirmNetworkFee": "Confirm Transaction Fee",
+	"label": "Withdraw",
+	"maxAmount": "Max",
+	"networkFee": "Transaction Fee",
+	"recipientLabel": "Recipient",
+	"recipientPlaceholder": "Enter {{symbol}} Address",
+	"remainingBalance": "Remaining balance",
+	"successDescription": "{{amount}} {{symbol}} sent to {{address}}",
+	"successTitle": "Successful withdrawal!",
+	"title": "Withdraw {{name}} ({{symbol}})"
+  }
 }

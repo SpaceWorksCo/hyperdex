@@ -1,67 +1,67 @@
 {
-	"tempMessageDescription": "Простые атомные свопы с минимальным взаимодействием пользователей",
-	"tempMessageTitle": "Скоро появится…",
-	"timedOut": "Время свопа истекло",
-	"title": "Своп",
-	"details": {
-		"aliceclaim": "Alice Claim",
-		"alicereclaim": "Alice Reclaim",
-		"alicepayment": "Платеж Алисы",
-		"alicespend": "Алиса потратила",
-		"bobdeposit": "Депозит Боба",
-		"bobpayment": "Платеж Боба",
-		"broadcast": "Передача",
-		"buy": "Купить",
-		"copyDebugData": "Скопировать данные отладки свопов",
-		"exchanging": "Обмен",
-		"executed": "Исполнено",
-		"for": "За",
-		"myfee": "Моя комиссия",
-		"order": "Ордер",
-		"requested": "Запрошено",
-		"pending": "Ожидание",
-		"price": "Цена",
-		"sell": "Продать",
-		"stats": "Цена исполнения на {{percentCheaperThanRequested}}% ниже, чем запрошено!",
-		"transactions": "Транзакции",
-		"youExchanged": "Вы обменяли",
-		"youReceived": "Вы получили",
-		"yourOffer": "Ваше предложение",
-		"view": "Смотреть"
-	},
-	"list": {
-		"baseAmount": "Base amount",
-		"date": "Дата",
-		"cancel": "Отменить",
-		"empty": "No orders",
-		"pair": "Пара",
-		"quoteAmount": "Quote amount",
-		"status": "Статус"
-	},
-	"status": {
-		"completed": "Завершено",
-		"failed": "С ошибкой",
-		"matched": "Совпало",
-		"reverted": "Возвращено к исходному состоянию",
-		"pending": "Ожидание",
-		"open": "Open",
-		"unmatched": "Не совпало",
-		"cancelled": "Cancelled"
-	},
-	"statusInformation": {
-		"reverted": "The swap was reverted due to connectivity issues."
-	},
-	"toggleAdvancedButton": {
-		"more": "More",
-		"less": "Less"
-	},
-	"filter": {
-		"buy": "Buy",
-		"date": "Date",
-		"dateFrom": "From",
-		"dateTo": "To",
-		"pair": "Pair",
-		"sell": "Sell",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Простые атомные свопы с минимальным взаимодействием пользователей",
+  "tempMessageTitle": "Скоро появится…",
+  "timedOut": "Время свопа истекло",
+  "title": "Своп",
+  "details": {
+	"aliceclaim": "Alice Claim",
+	"alicereclaim": "Alice Reclaim",
+	"alicepayment": "Платеж Алисы",
+	"alicespend": "Алиса потратила",
+	"bobdeposit": "Депозит Боба",
+	"bobpayment": "Платеж Боба",
+	"broadcast": "Передача",
+	"buy": "Купить",
+	"copyDebugData": "Скопировать данные отладки свопов",
+	"exchanging": "Обмен",
+	"executed": "Исполнено",
+	"for": "За",
+	"myfee": "Моя комиссия",
+	"order": "Ордер",
+	"requested": "Запрошено",
+	"pending": "Ожидание",
+	"price": "Цена",
+	"sell": "Продать",
+	"stats": "Цена исполнения на {{percentCheaperThanRequested}}% ниже, чем запрошено!",
+	"transactions": "Транзакции",
+	"youExchanged": "Вы обменяли",
+	"youReceived": "Вы получили",
+	"yourOffer": "Ваше предложение",
+	"view": "Смотреть"
+  },
+  "list": {
+	"baseAmount": "Base amount",
+	"date": "Дата",
+	"cancel": "Отменить",
+	"empty": "No orders",
+	"pair": "Пара",
+	"quoteAmount": "Quote amount",
+	"status": "Статус"
+  },
+  "status": {
+	"completed": "Завершено",
+	"failed": "С ошибкой",
+	"matched": "Совпало",
+	"reverted": "Возвращено к исходному состоянию",
+	"pending": "Ожидание",
+	"open": "Open",
+	"unmatched": "Не совпало",
+	"cancelled": "Cancelled"
+  },
+  "statusInformation": {
+	"reverted": "The swap was reverted due to connectivity issues."
+  },
+  "toggleAdvancedButton": {
+	"more": "More",
+	"less": "Less"
+  },
+  "filter": {
+	"buy": "Buy",
+	"date": "Date",
+	"dateFrom": "From",
+	"dateTo": "To",
+	"pair": "Pair",
+	"sell": "Sell",
+	"type": "Type"
+  }
 }

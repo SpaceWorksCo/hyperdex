@@ -1,67 +1,67 @@
 {
-	"tempMessageDescription": "Simple Atomic Swaps mit minimalem Benutzerinput",
-	"tempMessageTitle": "Bald verfügbar…",
-	"timedOut": "Tausch abgelaufen",
-	"title": "Tausch",
-	"details": {
-		"aliceclaim": "Alice Claim",
-		"alicereclaim": "Alice Reclaim",
-		"alicepayment": "Alice Zahlung",
-		"alicespend": "Alice Ausgaben",
-		"bobdeposit": "Bob Einzahlung",
-		"bobpayment": "Bob Zahlung",
-		"broadcast": "Übertragen",
-		"buy": "Kaufen",
-		"copyDebugData": "Tausch-Debugdaten kopieren",
-		"exchanging": "Tausche",
-		"executed": "Tatsächlich",
-		"for": "Gegen",
-		"myfee": "Meine Gebühr",
-		"order": "Auftrag",
-		"requested": "Beantragt",
-		"pending": "Ausstehend",
-		"price": "Preis",
-		"sell": "Verkaufen",
-		"stats": "Der tatsächliche Preis war um {{percentCheaperThanRequested}}% günstiger als angefordert!",
-		"transactions": "Transaktionen",
-		"youExchanged": "Du hast getauscht",
-		"youReceived": "Du hast erhalten",
-		"yourOffer": "Dein Angebot",
-		"view": "Ansehen"
-	},
-	"list": {
-		"baseAmount": "Base amount",
-		"date": "Date",
-		"cancel": "Abbrechen",
-		"empty": "No orders",
-		"pair": "Pair",
-		"quoteAmount": "Quote amount",
-		"status": "Status"
-	},
-	"status": {
-		"completed": "Abgeschlossen",
-		"failed": "Fehlgeschlagen",
-		"matched": "Übereinstimmung",
-		"reverted": "Zurückgewiesen",
-		"pending": "Ausstehend",
-		"open": "Open",
-		"unmatched": "Nicht Übereingestimmt",
-		"cancelled": "Cancelled"
-	},
-	"statusInformation": {
-		"reverted": "Der Tausch wurde aufgrund von Verbindungsproblemen zurückgewiesen."
-	},
-	"toggleAdvancedButton": {
-		"more": "More",
-		"less": "Less"
-	},
-	"filter": {
-		"buy": "Buy",
-		"date": "Date",
-		"dateFrom": "From",
-		"dateTo": "To",
-		"pair": "Pair",
-		"sell": "Sell",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Simple Atomic Swaps mit minimalem Benutzerinput",
+  "tempMessageTitle": "Bald verfügbar…",
+  "timedOut": "Tausch abgelaufen",
+  "title": "Tausch",
+  "details": {
+	"aliceclaim": "Alice Claim",
+	"alicereclaim": "Alice Reclaim",
+	"alicepayment": "Alice Zahlung",
+	"alicespend": "Alice Ausgaben",
+	"bobdeposit": "Bob Einzahlung",
+	"bobpayment": "Bob Zahlung",
+	"broadcast": "Übertragen",
+	"buy": "Kaufen",
+	"copyDebugData": "Tausch-Debugdaten kopieren",
+	"exchanging": "Tausche",
+	"executed": "Tatsächlich",
+	"for": "Gegen",
+	"myfee": "Meine Gebühr",
+	"order": "Auftrag",
+	"requested": "Beantragt",
+	"pending": "Ausstehend",
+	"price": "Preis",
+	"sell": "Verkaufen",
+	"stats": "Der tatsächliche Preis war um {{percentCheaperThanRequested}}% günstiger als angefordert!",
+	"transactions": "Transaktionen",
+	"youExchanged": "Du hast getauscht",
+	"youReceived": "Du hast erhalten",
+	"yourOffer": "Dein Angebot",
+	"view": "Ansehen"
+  },
+  "list": {
+	"baseAmount": "Base amount",
+	"date": "Date",
+	"cancel": "Abbrechen",
+	"empty": "No orders",
+	"pair": "Pair",
+	"quoteAmount": "Quote amount",
+	"status": "Status"
+  },
+  "status": {
+	"completed": "Abgeschlossen",
+	"failed": "Fehlgeschlagen",
+	"matched": "Übereinstimmung",
+	"reverted": "Zurückgewiesen",
+	"pending": "Ausstehend",
+	"open": "Open",
+	"unmatched": "Nicht Übereingestimmt",
+	"cancelled": "Cancelled"
+  },
+  "statusInformation": {
+	"reverted": "Der Tausch wurde aufgrund von Verbindungsproblemen zurückgewiesen."
+  },
+  "toggleAdvancedButton": {
+	"more": "More",
+	"less": "Less"
+  },
+  "filter": {
+	"buy": "Buy",
+	"date": "Date",
+	"dateFrom": "From",
+	"dateTo": "To",
+	"pair": "Pair",
+	"sell": "Sell",
+	"type": "Type"
+  }
 }

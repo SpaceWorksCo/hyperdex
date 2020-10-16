@@ -5,7 +5,7 @@ import appContainer from 'containers/App';
 import settingsContainer from 'containers/Settings';
 import CurrencySelectOption from 'components/CurrencySelectOption';
 import Select from 'components/Select';
-import {getCurrencySymbols, getCurrencyName} from '../../../marketmaker/supported-currencies';
+import {getCurrencyName, getCurrencySymbols} from '../../../marketmaker/supported-currencies';
 import {isDevelopment} from '../../../util-common';
 import {alwaysEnabledCurrencies} from '../../../constants';
 import {translate} from '../../translate';

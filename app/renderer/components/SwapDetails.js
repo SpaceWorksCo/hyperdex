@@ -1,4 +1,4 @@
-import {remote, clipboard} from 'electron';
+import {clipboard, remote} from 'electron';
 import title from 'title';
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -81,7 +81,8 @@ class SwapDetails extends React.Component {
 			<React.Fragment key={stage.event.type}>
 				<div className="arrow completed">→</div>
 				{stage.event.data && stage.event.data.tx_hash ? (
-					<ExternalLink url={stage.event.data.tx_hash ? blockExplorer.tx(stage.event.data.coin, stage.event.data.tx_hash) : null}>
+					<ExternalLink
+						url={stage.event.data.tx_hash ? blockExplorer.tx(stage.event.data.coin, stage.event.data.tx_hash) : null}>
 						<div className="item completed">
 							<h6>{t(`swapStages.${stage.event.type}`)}</h6>
 							<p>{stage.event.data.total_amount}<br/>{stage.event.data.coin}</p>
@@ -121,11 +122,14 @@ class SwapDetails extends React.Component {
 				<div key={value}>
 					<h6>{t(`details.${value}`)}</h6>
 					<p>
-						<span className="label">{t(`details.${swap.orderType}`)}:</span> {zeroPadFraction(swap[value].baseCurrencyAmount)} {baseCurrency}
+						<span
+							className="label">{t(`details.${swap.orderType}`)}:</span> {zeroPadFraction(swap[value].baseCurrencyAmount)} {baseCurrency}
 						<br/>
-						<span className="label">{t('details.for')}:</span> {zeroPadFraction(swap[value].quoteCurrencyAmount)} {quoteCurrency}
+						<span
+							className="label">{t('details.for')}:</span> {zeroPadFraction(swap[value].quoteCurrencyAmount)} {quoteCurrency}
 						<br/>
-						<span className="label">{t('details.price')}:</span> {zeroPadFraction(swap[value].price)} {quoteCurrency}
+						<span
+							className="label">{t('details.price')}:</span> {zeroPadFraction(swap[value].price)} {quoteCurrency}
 					</p>
 				</div>
 			);
@@ -136,7 +140,8 @@ class SwapDetails extends React.Component {
 		const titleComponent = (
 			<div className="title">
 				<div>{title(swap.statusFormatted)}</div>
-				<div className="title__main">{baseCurrency}/{quoteCurrency} {t(`details.${swap.orderType}`)} {t('details.order')}</div>
+				<div
+					className="title__main">{baseCurrency}/{quoteCurrency} {t(`details.${swap.orderType}`)} {t('details.order')}</div>
 				<div>{formatDate(swap.timeStarted, 'HH:mm DD/MM/YY')}</div>
 			</div>
 		);
@@ -157,7 +162,7 @@ class SwapDetails extends React.Component {
 							color={
 								(swap.status === 'completed' && 'var(--success-color)') ||
 								(swap.status === 'failed' && 'var(--error-color)') ||
-							null
+								null
 							}
 						/>
 						<div className="section overview">
@@ -228,12 +233,12 @@ class SwapDetails extends React.Component {
 									)}
 									<p>ID: {swap.uuid}</p>
 									{isDevelopment &&
-										<Button
-											value={t('details.copyDebugData')}
-											onClick={() => {
-												clipboard.writeText(JSON.stringify(swap, null, '\t'));
-											}}
-										/>
+									<Button
+										value={t('details.copyDebugData')}
+										onClick={() => {
+											clipboard.writeText(JSON.stringify(swap, null, '\t'));
+										}}
+									/>
 									}
 								</div>
 							</div>

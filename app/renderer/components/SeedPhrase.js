@@ -20,7 +20,8 @@ class SeedPhrase extends React.Component {
 	static defaultProps = {
 		showCopy: true,
 		showReload: false,
-		onReload: () => {},
+		onReload: () => {
+		},
 	}
 
 	state = {

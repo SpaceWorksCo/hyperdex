@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "التفضيلات…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "الويب",
-		"sourceCode": "الكود المصدر",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "الإبلاغ عن مشكلة…",
-		"about": "حول {{appName}}"
-	},
-	"other": {
-		"file": "الملف"
-	},
-	"portfolio": {
-		"title": "الحافظة",
-		"dashboard": "لوحة المعلومات",
-		"swap": "مبادلة",
-		"exchange": "تبادل",
-		"trades": "التداولات",
-		"settings": "الإعدادات",
-		"goToPrevView": "انتقل إلى العرض السابق",
-		"goToNextView": "انتقل إلى العرض التالي",
-		"logOut": "تسجيل الخروج"
-	}
+  "app": {
+	"preferences": "التفضيلات…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "الويب",
+	"sourceCode": "الكود المصدر",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "الإبلاغ عن مشكلة…",
+	"about": "حول {{appName}}"
+  },
+  "other": {
+	"file": "الملف"
+  },
+  "portfolio": {
+	"title": "الحافظة",
+	"dashboard": "لوحة المعلومات",
+	"swap": "مبادلة",
+	"exchange": "تبادل",
+	"trades": "التداولات",
+	"settings": "الإعدادات",
+	"goToPrevView": "انتقل إلى العرض السابق",
+	"goToNextView": "انتقل إلى العرض التالي",
+	"logOut": "تسجيل الخروج"
+  }
 }

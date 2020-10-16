@@ -145,7 +145,8 @@ class LoginBox extends React.Component {
 						/>
 					</div>
 					<div className="form-group form-group-2">
-						<Button primary fullwidth type="submit" value={t('login')} disabled={!this.state.passwordInputValue || this.state.isLoggingIn}/>
+						<Button primary fullwidth type="submit" value={t('login')}
+								disabled={!this.state.passwordInputValue || this.state.isLoggingIn}/>
 						<Link
 							disabled={this.state.isLoggingIn}
 							style={{

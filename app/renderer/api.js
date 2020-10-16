@@ -153,7 +153,7 @@ export default class Api {
 		}
 	}
 
-  // Mm v2
+	// Mm v2
 	async disableCurrency(symbol) {
 		ow(symbol, 'symbol', symbolPredicate);
 

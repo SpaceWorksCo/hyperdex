@@ -1,18 +1,18 @@
 .SeedPhraseModal {
-	.SeedPhrase {
-		border: 1px solid var(--primary-color);
-		color: var(--primary-color);
-	}
+  .SeedPhrase {
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+  }
 
-	.CopyButton {
-		color: var(--primary-color);
-	}
+  .CopyButton {
+	color: var(--primary-color);
+  }
 
-	.Input--error {
-		margin-bottom: 20px;
-	}
+  .Input--error {
+	margin-bottom: 20px;
+  }
 
-	.Input__text p {
-		font-size: 12px;
-	}
+  .Input__text p {
+	font-size: 12px;
+  }
 }

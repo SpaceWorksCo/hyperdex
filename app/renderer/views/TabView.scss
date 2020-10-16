@@ -7,151 +7,150 @@ h3,
 h4,
 h5,
 h6 {
-	@extend %headings !optional;
+  @extend %headings !optional;
 }
 
 .TabView {
-	--nav-width: 80px;
-	display: grid;
-	grid-template-areas:
+  --nav-width: 80px;
+  display: grid;
+  grid-template-areas:
 		'toolbar toolbar'
 		'nav content';
-	grid-template-rows: 38px 1fr;
-	grid-template-columns: var(--nav-width) 1fr;
-	height: 100vh;
+  grid-template-rows: 38px 1fr;
+  grid-template-columns: var(--nav-width) 1fr;
+  height: 100vh;
 
-	.toolbar {
-		-webkit-app-region: drag;
-		grid-area: toolbar;
+  .toolbar {
+	-webkit-app-region: drag;
+	grid-area: toolbar;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-left: calc(var(--nav-width) + 10px);
+	background-color: var(--widget-background-color);
+
+	.app-name {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  display: block;
+	  height: 38px;
+	  line-height: 36px;
+	  text-align: center;
+	  font-size: 14px;
+	  font-weight: 500;
+	  opacity: 0.9;
+	  pointer-events: none;
+	}
+
+	.right-container {
+	  display: flex;
+
+	  .feedback-button,
+	  .DonateButton {
 		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		padding-left: calc(var(--nav-width) + 10px);
-		background-color: var(--widget-background-color);
+		margin: 4px 10px;
+		padding: 0;
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+		linear-gradient(180deg, #18202b 0%, #313d4f 0.01%, #293342 100%);
+		box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2), 0 0 0 rgba(0, 0, 0, 0.1);
+		line-height: 1;
+		min-width: unset;
+		opacity: 0.9;
 
-		.app-name {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
+		[data-theme='light'] & {
+		  filter: invert(1) saturate(0);
+		}
+
+		.Button__value {
+		  padding: 4px 8px;
+		  font-size: 12px;
+		  color: rgba(255, 255, 255, 0.7);
+		  transition: color 0.3s ease-in-out;
+		}
+
+		&:hover .Button__value {
+		  color: rgba(255, 255, 255, 0.9);
+		}
+	  }
+
+	  .portfolio-dropdown {
+		width: 40px;
+		margin: 0 10px;
+
+		.avatar-wrapper {
+		  width: 30px;
+		  height: 30px;
+		  padding: 8px;
+		  background-color: var(--background-color);
+		  border-radius: 100%;
+
+		  [data-theme='light'] & {
+			background-color: #fff;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+		  }
+
+		  img {
 			display: block;
-			height: 38px;
-			line-height: 36px;
-			text-align: center;
-			font-size: 14px;
-			font-weight: 500;
-			opacity: 0.9;
-			pointer-events: none;
+			width: 100%;
+			height: 100%;
+		  }
 		}
-
-		.right-container {
-			display: flex;
-
-			.feedback-button,
-			.DonateButton {
-				display: flex;
-				margin: 4px 10px;
-				padding: 0;
-				background:
-					linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
-					linear-gradient(180deg, #18202b 0%, #313d4f 0.01%, #293342 100%);
-				box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2), 0 0 0 rgba(0, 0, 0, 0.1);
-				line-height: 1;
-				min-width: unset;
-				opacity: 0.9;
-
-				[data-theme='light'] & {
-					filter: invert(1) saturate(0);
-				}
-
-				.Button__value {
-					padding: 4px 8px;
-					font-size: 12px;
-					color: rgba(255, 255, 255, 0.7);
-					transition: color 0.3s ease-in-out;
-				}
-
-				&:hover .Button__value {
-					color: rgba(255, 255, 255, 0.9);
-				}
-			}
-
-			.portfolio-dropdown {
-				width: 40px;
-				margin: 0 10px;
-
-				.avatar-wrapper {
-					width: 30px;
-					height: 30px;
-					padding: 8px;
-					background-color: var(--background-color);
-					border-radius: 100%;
-
-					[data-theme='light'] & {
-						background-color: #fff;
-						border: 1px solid rgba(0, 0, 0, 0.1);
-					}
-
-					img {
-						display: block;
-						width: 100%;
-						height: 100%;
-					}
-				}
-			}
-		}
-
-		%headings {
-			margin: 0;
-		}
+	  }
 	}
 
-	.nav {
-		grid-area: nav;
-		display: flex;
-		flex-direction: column;
-		padding-top: 28px;
-		background-color: var(--widget-background-color);
-		user-select: none;
-		cursor: default;
+	%headings {
+	  margin: 0;
+	}
+  }
 
-		&--button {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			height: 80px;
-			font-size: 12.5px;
-			font-weight: 500;
-			color: var(--text-color);
+  .nav {
+	grid-area: nav;
+	display: flex;
+	flex-direction: column;
+	padding-top: 28px;
+	background-color: var(--widget-background-color);
+	user-select: none;
+	cursor: default;
 
-			.icon {
-				width: 24px;
-				height: 24px;
-				margin-bottom: 8px;
-				fill: var(--text-color);
-			}
+	&--button {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  height: 80px;
+	  font-size: 12.5px;
+	  font-weight: 500;
+	  color: var(--text-color);
 
-			[data-theme='light'] & {
-				opacity: 0.8;
-			}
+	  .icon {
+		width: 24px;
+		height: 24px;
+		margin-bottom: 8px;
+		fill: var(--text-color);
+	  }
 
-			&.active {
-				color: var(--active-text-color);
+	  [data-theme='light'] & {
+		opacity: 0.8;
+	  }
 
-				[data-theme='light'] & {
-					filter: drop-shadow(0 0 8px var(--primary-color-opacity-0-7));
-				}
+	  &.active {
+		color: var(--active-text-color);
 
-				.icon {
-					fill: var(--primary-color);
-				}
-			}
+		[data-theme='light'] & {
+		  filter: drop-shadow(0 0 8px var(--primary-color-opacity-0-7));
 		}
-	}
 
-	.content {
-		grid-area: content;
-		margin: 20px;
-		overflow: hidden;
+		.icon {
+		  fill: var(--primary-color);
+		}
+	  }
 	}
+  }
+
+  .content {
+	grid-area: content;
+	margin: 20px;
+	overflow: hidden;
+  }
 }

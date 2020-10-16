@@ -7,16 +7,16 @@ import _ from 'lodash';
 
 const toClassComponent = (FunctionalComponent, constructorHook) => {
 	class ClassComponent extends React.Component {
-		static get name() {
-			return FunctionalComponent.name;
-		}
-
 		constructor(props) {
 			super(props);
 
 			if (constructorHook) {
 				constructorHook(this);
 			}
+		}
+
+		static get name() {
+			return FunctionalComponent.name;
 		}
 
 		render() {

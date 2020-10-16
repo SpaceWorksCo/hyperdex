@@ -2,33 +2,33 @@
 @import '../styles/variables';
 
 .DepthChart {
-	display: flex;
+  display: flex;
 
-	.custom-tooltip {
-		font-size: 12px;
+  .custom-tooltip {
+	font-size: 12px;
+  }
+
+  /* Hides the first YAxis tick */
+  .recharts-yAxis .recharts-cartesian-axis-tick:first-child {
+	display: none;
+  }
+
+  .recharts-responsive-container:nth-child(1) {
+	.recharts-xAxis .recharts-cartesian-axis-tick:last-child {
+	  display: none;
 	}
+  }
 
-	/* Hides the first YAxis tick */
-	.recharts-yAxis .recharts-cartesian-axis-tick:first-child {
-		display: none;
+  .recharts-responsive-container:nth-child(2) {
+	position: relative;
+	left: -10px;
+
+	.recharts-xAxis .recharts-cartesian-axis-tick:first-child {
+	  display: none;
 	}
+  }
 
-	.recharts-responsive-container:nth-child(1) {
-		.recharts-xAxis .recharts-cartesian-axis-tick:last-child {
-			display: none;
-		}
-	}
-
-	.recharts-responsive-container:nth-child(2) {
-		position: relative;
-		left: -10px;
-
-		.recharts-xAxis .recharts-cartesian-axis-tick:first-child {
-			display: none;
-		}
-	}
-
-	&.is-empty .recharts-area-dots {
-		display: none;
-	}
+  &.is-empty .recharts-area-dots {
+	display: none;
+  }
 }

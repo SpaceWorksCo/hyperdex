@@ -1,276 +1,276 @@
 .SwapList {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 12px;
+  height: 0;
+  min-height: 100%;
+  padding: 10px 0;
+
+  .container {
+	position: relative;
 	flex: 1;
-	overflow-x: hidden;
-	overflow-y: auto;
-	font-size: 12px;
-	height: 0;
-	min-height: 100%;
-	padding: 10px 0;
+  }
 
-	.container {
-		position: relative;
-		flex: 1;
-	}
-
-	.row {
-		display: grid;
-		grid-template-areas:
+  .row {
+	display: grid;
+	grid-template-areas:
 			'pairs base-amount quote-amount'
 			'timestamp status buttons';
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 8px;
-		justify-content: center;
-		align-items: center;
-		white-space: nowrap;
-		border-bottom: 1px solid var(--section-border-color);
-		padding: 10px 20px;
-		user-select: none;
-		cursor: default;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 8px;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	border-bottom: 1px solid var(--section-border-color);
+	padding: 10px 20px;
+	user-select: none;
+	cursor: default;
 
-		&:last-child {
-			border-bottom: none;
-		}
-
-		.timestamp {
-			grid-area: timestamp;
-			white-space: nowrap;
-		}
-
-		.pairs {
-			grid-area: pairs;
-		}
-
-		.base-amount {
-			grid-area: base-amount;
-			justify-self: center;
-		}
-
-		.quote-amount {
-			grid-area: quote-amount;
-			justify-self: end;
-		}
-
-		.status {
-			grid-area: status;
-			justify-self: center;
-		}
-
-		.buttons {
-			grid-area: buttons;
-			justify-self: end;
-			display: flex;
-
-			> * {
-				margin-right: 10px;
-			}
-
-			> *:last-child {
-				margin-right: 0;
-			}
-
-			.cancel__button[disabled] {
-				transition: unset;
-			}
-		}
-	}
-
-	.row:not(.header):hover {
-		background-color: var(--table-row-hover-color);
-
-		.cancel__button[disabled] {
-			opacity: 0.7;
-		}
-	}
-
-	.header {
-		padding-top: 0;
-		padding-bottom: 0;
-
-		> * {
-			position: relative;
-			padding: 10px 0;
-			color: var(--text-color);
-			transition: color 0.3s;
-			cursor: default;
-			user-select: none;
-
-			&:hover {
-				color: var(--swap-header-hover-color);
-
-				.sort::after {
-					border-color: var(--swap-header-hover-color);
-				}
-			}
-		}
-
-		.sort {
-			position: absolute;
-			top: calc(50% + 1px);
-			margin-left: 10px;
-			transform: rotate(45deg);
-		}
-
-		.sort::after {
-			content: '';
-			position: absolute;
-			width: 5px;
-			height: 5px;
-			margin: -3px 0 0 -3px;
-			border-left: none;
-			border-top: none;
-			border-right: 1px var(--text-color) solid;
-			border-bottom: 1px var(--text-color) solid;
-			transition: border-color 0.3s;
-		}
-
-		.asc {
-			top: calc(50% + 2px);
-			transform: rotate(225deg);
-		}
-	}
-
-	@media (min-width: 1220px) {
-		.row {
-			grid-template-areas: 'timestamp base-amount quote-amount status buttons';
-			grid-template-columns: 0.8fr 1fr 1fr 0.5fr 0.5fr;
-			justify-content: unset;
-			white-space: unset;
-
-			.pairs {
-				display: none;
-			}
-
-			.base-amount {
-				justify-self: start;
-			}
-
-			.quote-amount {
-				justify-self: start;
-			}
-
-			.status {
-				justify-self: start;
-			}
-
-			.buttons {
-				justify-self: end;
-			}
-		}
-	}
-
-	@media (min-width: 1480px) {
-		.row {
-			grid-template-columns: 14% 15% 21% 21%;
-
-			.pairs {
-				display: block;
-			}
-		}
+	&:last-child {
+	  border-bottom: none;
 	}
 
 	.timestamp {
-		color: var(--text-color);
+	  grid-area: timestamp;
+	  white-space: nowrap;
 	}
 
-	.buy .quote-amount,
-	.sell .base-amount {
-		color: var(--red-color);
-
-		&::before {
-			content: '-';
-		}
+	.pairs {
+	  grid-area: pairs;
 	}
 
-	.sell .quote-amount,
-	.buy .base-amount {
-		color: var(--green-color);
+	.base-amount {
+	  grid-area: base-amount;
+	  justify-self: center;
+	}
 
-		&::before {
-			content: '+';
-		}
+	.quote-amount {
+	  grid-area: quote-amount;
+	  justify-self: end;
 	}
 
 	.status {
-		&__icon {
-			width: 62px;
-			padding: 1px 2px;
-			font-size: 10px;
-			text-align: center;
-			text-transform: uppercase;
-			border: 1px solid;
-			border-radius: 3px;
-			user-select: none;
-			cursor: default;
-		}
-
-		&__icon[data-status='pending'],
-		&__icon[data-status='matched'],
-		&__icon[data-status='swapping'] {
-			background-color: var(--primary-color);
-			border-color: var(--primary-color);
-
-			[data-theme='light'] & {
-				background-color: var(--primary-color-opacity-0-2);
-			}
-		}
-
-		&__icon[data-status='failed'] {
-			color: var(--text-color-faded);
-			border-color: var(--swap-status-border-color);
-		}
-
-		&__icon[data-status='completed'] {
-			border-color: var(--primary-color);
-		}
+	  grid-area: status;
+	  justify-self: center;
 	}
 
-	.view,
-	.cancel {
-		&__button {
-			padding: 2px 4px;
-			color: var(--text-color2);
-			background-color: var(--background-color);
-			border: 1px solid var(--border-color);
-			transition: 0.2s ease-out;
-			font-size: 11px;
-			border-radius: 3px;
+	.buttons {
+	  grid-area: buttons;
+	  justify-self: end;
+	  display: flex;
 
-			&:hover {
-				border-color: rgba(255, 255, 255, 0.2);
+	  > * {
+		margin-right: 10px;
+	  }
 
-				[data-theme='light'] & {
-					border-color: rgba(0, 0, 0, 0.5);
-				}
-			}
+	  > *:last-child {
+		margin-right: 0;
+	  }
 
-			&:active {
-				color: rgba(255, 255, 255, 0.8);
-				border-color: rgba(255, 255, 255, 0.15);
-			}
+	  .cancel__button[disabled] {
+		transition: unset;
+	  }
+	}
+  }
 
-			&[disabled] {
-				user-select: none;
-				cursor: default;
-				color: var(--text-color);
-				opacity: 0.8;
+  .row:not(.header):hover {
+	background-color: var(--table-row-hover-color);
 
-				&:hover {
-					border: 1px solid var(--border-color);
-				}
-			}
+	.cancel__button[disabled] {
+	  opacity: 0.7;
+	}
+  }
+
+  .header {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	> * {
+	  position: relative;
+	  padding: 10px 0;
+	  color: var(--text-color);
+	  transition: color 0.3s;
+	  cursor: default;
+	  user-select: none;
+
+	  &:hover {
+		color: var(--swap-header-hover-color);
+
+		.sort::after {
+		  border-color: var(--swap-header-hover-color);
 		}
+	  }
 	}
 
-	.cancel :not([disabled]) {
-		filter: hue-rotate(120deg);
+	.sort {
+	  position: absolute;
+	  top: calc(50% + 1px);
+	  margin-left: 10px;
+	  transform: rotate(45deg);
 	}
+
+	.sort::after {
+	  content: '';
+	  position: absolute;
+	  width: 5px;
+	  height: 5px;
+	  margin: -3px 0 0 -3px;
+	  border-left: none;
+	  border-top: none;
+	  border-right: 1px var(--text-color) solid;
+	  border-bottom: 1px var(--text-color) solid;
+	  transition: border-color 0.3s;
+	}
+
+	.asc {
+	  top: calc(50% + 2px);
+	  transform: rotate(225deg);
+	}
+  }
+
+  @media (min-width: 1220px) {
+	.row {
+	  grid-template-areas: 'timestamp base-amount quote-amount status buttons';
+	  grid-template-columns: 0.8fr 1fr 1fr 0.5fr 0.5fr;
+	  justify-content: unset;
+	  white-space: unset;
+
+	  .pairs {
+		display: none;
+	  }
+
+	  .base-amount {
+		justify-self: start;
+	  }
+
+	  .quote-amount {
+		justify-self: start;
+	  }
+
+	  .status {
+		justify-self: start;
+	  }
+
+	  .buttons {
+		justify-self: end;
+	  }
+	}
+  }
+
+  @media (min-width: 1480px) {
+	.row {
+	  grid-template-columns: 14% 15% 21% 21%;
+
+	  .pairs {
+		display: block;
+	  }
+	}
+  }
+
+  .timestamp {
+	color: var(--text-color);
+  }
+
+  .buy .quote-amount,
+  .sell .base-amount {
+	color: var(--red-color);
+
+	&::before {
+	  content: '-';
+	}
+  }
+
+  .sell .quote-amount,
+  .buy .base-amount {
+	color: var(--green-color);
+
+	&::before {
+	  content: '+';
+	}
+  }
+
+  .status {
+	&__icon {
+	  width: 62px;
+	  padding: 1px 2px;
+	  font-size: 10px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  border: 1px solid;
+	  border-radius: 3px;
+	  user-select: none;
+	  cursor: default;
+	}
+
+	&__icon[data-status='pending'],
+	&__icon[data-status='matched'],
+	&__icon[data-status='swapping'] {
+	  background-color: var(--primary-color);
+	  border-color: var(--primary-color);
+
+	  [data-theme='light'] & {
+		background-color: var(--primary-color-opacity-0-2);
+	  }
+	}
+
+	&__icon[data-status='failed'] {
+	  color: var(--text-color-faded);
+	  border-color: var(--swap-status-border-color);
+	}
+
+	&__icon[data-status='completed'] {
+	  border-color: var(--primary-color);
+	}
+  }
+
+  .view,
+  .cancel {
+	&__button {
+	  padding: 2px 4px;
+	  color: var(--text-color2);
+	  background-color: var(--background-color);
+	  border: 1px solid var(--border-color);
+	  transition: 0.2s ease-out;
+	  font-size: 11px;
+	  border-radius: 3px;
+
+	  &:hover {
+		border-color: rgba(255, 255, 255, 0.2);
+
+		[data-theme='light'] & {
+		  border-color: rgba(0, 0, 0, 0.5);
+		}
+	  }
+
+	  &:active {
+		color: rgba(255, 255, 255, 0.8);
+		border-color: rgba(255, 255, 255, 0.15);
+	  }
+
+	  &[disabled] {
+		user-select: none;
+		cursor: default;
+		color: var(--text-color);
+		opacity: 0.8;
+
+		&:hover {
+		  border: 1px solid var(--border-color);
+		}
+	  }
+	}
+  }
+
+  .cancel :not([disabled]) {
+	filter: hue-rotate(120deg);
+  }
 }
 
 @media (min-width: 1400px) {
-	.SwapList,
-	.SwapList button {
-		font-size: 13px;
-	}
+  .SwapList,
+  .SwapList button {
+	font-size: 13px;
+  }
 }

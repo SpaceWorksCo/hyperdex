@@ -11,7 +11,7 @@ const t = translate('portfolio');
 const NewPortfolio = () => (
 	<div className="NewPortfolio">
 		{loginContainer.state.portfolios.length > 0 &&
-			<LoginBackButton view="LoginBox" progress={0}/>
+		<LoginBackButton view="LoginBox" progress={0}/>
 		}
 		<Trans i18n={instance} i18nKey="new.createOrRestoreTitle" t={t}>
 			<h2>Would you like to create a new portfolio<br/>or restore an existing one?</h2>

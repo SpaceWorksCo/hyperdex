@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Preferences…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Website",
-		"sourceCode": "Source Code",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Report an Issue…",
-		"about": "About {{appName}}"
-	},
-	"other": {
-		"file": "File"
-	},
-	"portfolio": {
-		"title": "Portfolio",
-		"dashboard": "Dashboard",
-		"swap": "Swap",
-		"exchange": "Exchange",
-		"trades": "Trades",
-		"settings": "Settings",
-		"goToPrevView": "Go to Previous View",
-		"goToNextView": "Go to Next View",
-		"logOut": "Log Out"
-	}
+  "app": {
+	"preferences": "Preferences…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Website",
+	"sourceCode": "Source Code",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Report an Issue…",
+	"about": "About {{appName}}"
+  },
+  "other": {
+	"file": "File"
+  },
+  "portfolio": {
+	"title": "Portfolio",
+	"dashboard": "Dashboard",
+	"swap": "Swap",
+	"exchange": "Exchange",
+	"trades": "Trades",
+	"settings": "Settings",
+	"goToPrevView": "Go to Previous View",
+	"goToNextView": "Go to Next View",
+	"logOut": "Log Out"
+  }
 }

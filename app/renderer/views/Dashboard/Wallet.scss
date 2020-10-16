@@ -2,30 +2,30 @@
 @import '../../styles/variables';
 
 .Dashboard--Wallet {
+  display: flex;
+  flex-direction: column;
+
+  header {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 20px;
+	border-bottom: 1px solid var(--section-border-color);
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: 0 20px;
-		border-bottom: 1px solid var(--section-border-color);
+	nav {
+	  .TabButton {
+		display: inline-block;
+		padding: 20px 0;
+		margin-bottom: -1px;
+		font-size: 18px;
+	  }
 
-		nav {
-			.TabButton {
-				display: inline-block;
-				padding: 20px 0;
-				margin-bottom: -1px;
-				font-size: 18px;
-			}
-
-			.TabButton:hover {
-				.Button__helper {
-					opacity: 0 !important; // stylelint-disable-line
-				}
-			}
+	  .TabButton:hover {
+		.Button__helper {
+		  opacity: 0 !important; // stylelint-disable-line
 		}
+	  }
 	}
+  }
 }

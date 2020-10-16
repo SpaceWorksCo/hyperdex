@@ -1,8 +1,8 @@
 {
-	"forgotPassword": "Glemt passord",
-	"incorrectPassword": "Feil passord",
-	"login": "Logg inn",
-	"loggingIn": "Logger inn…",
-	"password": "Passord",
-	"selectPortfolio": "Velg portefølje…"
+  "forgotPassword": "Glemt passord",
+  "incorrectPassword": "Feil passord",
+  "login": "Logg inn",
+  "loggingIn": "Logger inn…",
+  "password": "Passord",
+  "selectPortfolio": "Velg portefølje…"
 }

@@ -43,7 +43,8 @@ class DeleteModal extends React.Component {
 					onClose={this.handleClose}
 				>
 					<Trans i18n={instance} i18nKey="deletePortfolio.description" t={t}>
-						<p>Unless you save your seed phrase, this action cannot be undone and will permanently delete the <strong>{{name: appContainer.state.portfolio.name}}</strong> portfolio.</p>
+						<p>Unless you save your seed phrase, this action cannot be undone and will permanently delete
+							the <strong>{{name: appContainer.state.portfolio.name}}</strong> portfolio.</p>
 						<p>Please type in the name of the portfolio to confirm.</p>
 					</Trans>
 					<div className="form-group">

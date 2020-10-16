@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Tùy chọn…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Trang web",
-		"sourceCode": "Mã nguồn",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Báo cáo một vấn đề…",
-		"about": "Về {{appName}}"
-	},
-	"other": {
-		"file": "File"
-	},
-	"portfolio": {
-		"title": "Mục đầu tư",
-		"dashboard": "Bảng điều khiển",
-		"swap": "Hoán đổi",
-		"exchange": "Tỉ giá",
-		"trades": "Giao dịch",
-		"settings": "Cài đặt",
-		"goToPrevView": "Đi tới Trang Trước",
-		"goToNextView": "Đi tới Trang Tiếp",
-		"logOut": "Đăng Xuất"
-	}
+  "app": {
+	"preferences": "Tùy chọn…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Trang web",
+	"sourceCode": "Mã nguồn",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Báo cáo một vấn đề…",
+	"about": "Về {{appName}}"
+  },
+  "other": {
+	"file": "File"
+  },
+  "portfolio": {
+	"title": "Mục đầu tư",
+	"dashboard": "Bảng điều khiển",
+	"swap": "Hoán đổi",
+	"exchange": "Tỉ giá",
+	"trades": "Giao dịch",
+	"settings": "Cài đặt",
+	"goToPrevView": "Đi tới Trang Trước",
+	"goToNextView": "Đi tới Trang Tiếp",
+	"logOut": "Đăng Xuất"
+  }
 }

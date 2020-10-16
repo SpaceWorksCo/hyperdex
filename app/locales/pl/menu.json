@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Preferencje…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Strona internetowa",
-		"sourceCode": "Kod źródłowy",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Zgłoś problem…",
-		"about": "O {{appName}}"
-	},
-	"other": {
-		"file": "Plik"
-	},
-	"portfolio": {
-		"title": "Portfolio",
-		"dashboard": "Pulpit",
-		"swap": "Swap",
-		"exchange": "Wymiana",
-		"trades": "Transakcje",
-		"settings": "Ustawienia",
-		"goToPrevView": "Przejdź do poprzedniego widoku",
-		"goToNextView": "Przejdź do następnego widoku",
-		"logOut": "Wyloguj się"
-	}
+  "app": {
+	"preferences": "Preferencje…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Strona internetowa",
+	"sourceCode": "Kod źródłowy",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Zgłoś problem…",
+	"about": "O {{appName}}"
+  },
+  "other": {
+	"file": "Plik"
+  },
+  "portfolio": {
+	"title": "Portfolio",
+	"dashboard": "Pulpit",
+	"swap": "Swap",
+	"exchange": "Wymiana",
+	"trades": "Transakcje",
+	"settings": "Ustawienia",
+	"goToPrevView": "Przejdź do poprzedniego widoku",
+	"goToNextView": "Przejdź do następnego widoku",
+	"logOut": "Wyloguj się"
+  }
 }

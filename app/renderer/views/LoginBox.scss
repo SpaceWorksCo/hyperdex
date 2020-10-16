@@ -1,30 +1,30 @@
 .LoginBox {
-	margin-top: 50px;
+  margin-top: 50px;
 
-	.form-group-1 {
-		display: flex;
-		width: 100%;
-		margin-top: 20px;
+  .form-group-1 {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
 
-		.portfolio-selector {
-			flex: 1;
-			margin-right: 8px;
-		}
+	.portfolio-selector {
+	  flex: 1;
+	  margin-right: 8px;
 	}
+  }
 
-	.form-group-2 {
-		margin-top: 25px;
+  .form-group-2 {
+	margin-top: 25px;
+  }
+
+  .SettingsButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: var(--text-color);
+	transition: color 0.1s ease-in;
+
+	&:hover {
+	  color: var(--text-color2);
 	}
-
-	.SettingsButton {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		color: var(--text-color);
-		transition: color 0.1s ease-in;
-
-		&:hover {
-			color: var(--text-color2);
-		}
-	}
+  }
 }

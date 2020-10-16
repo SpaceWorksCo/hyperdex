@@ -29,6 +29,9 @@ class TextArea extends React.Component {
 		preventNewlines: false,
 		onChange: undefined,
 	};
+	state = {
+		value: this.props.value,
+	};
 
 	static getDerivedStateFromProps(props, state) {
 		return props.value === state.prevValue ? null : {
@@ -36,10 +39,6 @@ class TextArea extends React.Component {
 			prevValue: props.value,
 		};
 	}
-
-	state = {
-		value: this.props.value,
-	};
 
 	handleChange = event => {
 		const {preventNewlines, onChange} = this.props;
@@ -109,7 +108,7 @@ class TextArea extends React.Component {
 					/>
 				</div>
 				{((level && message) || message) &&
-					<span className="Input__text">
+				<span className="Input__text">
 						<p>{message}</p>
 					</span>
 				}

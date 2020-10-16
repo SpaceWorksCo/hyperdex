@@ -483,7 +483,7 @@ const supportedCurrencies = [
 	},
 	{
 		coin: 'ETH',
-		name: 'ethereum',
+		name: 'Ethereum',
 		fname: 'Ethererum',
 		avg_blocktime: '0.25',
 		rpcport: 80,

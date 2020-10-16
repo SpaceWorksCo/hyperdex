@@ -8,7 +8,7 @@ import fireEvery from '../fire-every';
 class ExchangeContainer extends SuperContainer {
 	getInitialState() {
 		return {
-			baseCurrency: 'CHIPS',
+			baseCurrency: 'SPACE',
 			quoteCurrency: 'KMD',
 			activeSwapsView: 'OpenOrders',
 			orderBook: {

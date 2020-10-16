@@ -153,8 +153,7 @@ export default class Api {
 		}
 	}
 
-	// Mm v2 doesn't currently have an endpoint for disabling a coin, so we do nothing.
-	// https://github.com/artemii235/SuperNET/issues/459
+  // Mm v2
 	async disableCurrency(symbol) {
 		ow(symbol, 'symbol', symbolPredicate);
 

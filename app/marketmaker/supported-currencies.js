@@ -562,6 +562,7 @@ const supportedCurrencies = [
 				port: 50001,
 			},
 		],
+	},
 	{
 		coin: 'MANA',
 		name: 'Decentraland',

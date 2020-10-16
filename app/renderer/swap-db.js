@@ -71,7 +71,7 @@ class SwapDB {
 
 	insertSwapData(swap, requestOpts) {
 		return this.queue(() => this.db.post({
-			uuid: swap.uuid,
+			uuid: swap.uuid || 0,
 			timeStarted: Date.now(),
 			request: requestOpts,
 			response: swap,

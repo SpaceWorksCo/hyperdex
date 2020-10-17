@@ -1,12 +1,12 @@
 {
-	"settings": {
-		"customUrl": "URL سفارشی Marketmaker",
-		"exampleUrl": "مثال: {{url}}",
-		"invalidUrl": "URL اشتباه است",
-		"title": "تنظیمات برنامه"
-	},
-	"donate": {
-		"title": "اهدای کمک مالی",
-		"bodyText": "HyperDEX پروژه‌ای رایگان و منبع باز است. می‌توانید با اهدای کمک‌های مالی به آدرس‌های زیر از رشد آن حمایت کنید."
-	}
+  "settings": {
+	"customUrl": "URL سفارشی Marketmaker",
+	"exampleUrl": "مثال: {{url}}",
+	"invalidUrl": "URL اشتباه است",
+	"title": "تنظیمات برنامه"
+  },
+  "donate": {
+	"title": "اهدای کمک مالی",
+	"bodyText": "HyperDEX پروژه‌ای رایگان و منبع باز است. می‌توانید با اهدای کمک‌های مالی به آدرس‌های زیر از رشد آن حمایت کنید."
+  }
 }

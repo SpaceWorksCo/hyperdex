@@ -1,58 +1,58 @@
 @import '../styles/variables';
 
 .SelectOption {
-	--image-size: 20px;
-	display: flex;
-	align-items: center;
+  --image-size: 20px;
+  display: flex;
+  align-items: center;
 
-	&__label {
-		margin-left: 0;
+  &__label {
+	margin-left: 0;
+  }
+
+  &__image-wrap {
+	position: relative;
+	left: -4px;
+
+	img {
+	  display: block;
 	}
+  }
 
-	&__image-wrap {
-		position: relative;
-		left: -4px;
+  &__image {
+	display: block;
+	width: var(--image-size);
+	height: var(--image-size);
+  }
 
-		img {
-			display: block;
-		}
+  &--image {
+	.SelectOption__label {
+	  margin-left: 4px;
 	}
-
-	&__image {
-		display: block;
-		width: var(--image-size);
-		height: var(--image-size);
-	}
-
-	&--image {
-		.SelectOption__label {
-			margin-left: 4px;
-		}
-	}
+  }
 }
 
 .Select--multi .Select-multi-value-wrapper {
-	.SelectOption {
-		&__image-wrap {
-			position: unset;
-			left: unset;
+  .SelectOption {
+	&__image-wrap {
+	  position: unset;
+	  left: unset;
 
-			img {
-				width: 18px;
-				height: 18px;
-			}
-		}
+	  img {
+		width: 18px;
+		height: 18px;
+	  }
 	}
+  }
 }
 
 .Select-menu {
-	.SelectOption {
-		&__image-wrap {
-			/* Use larger icons in the dropdown menu */
-			img {
-				width: 26px;
-				height: 26px;
-			}
-		}
+  .SelectOption {
+	&__image-wrap {
+	  /* Use larger icons in the dropdown menu */
+	  img {
+		width: 26px;
+		height: 26px;
+	  }
 	}
+  }
 }

@@ -67,6 +67,17 @@ class Input extends React.Component {
 		value: '',
 		pattern: undefined,
 	}
+	state = {
+		level: this.props.level,
+		value: this.props.value,
+	};
+	_checkValidity = _.debounce(event => {
+		const {pattern} = this.props;
+		const {value} = event.target;
+		const isValid = typeof pattern === 'function' ? (!value || pattern(value)) : event.target.checkValidity();
+
+		this.setState({level: isValid ? null : 'error'});
+	}, 500);
 
 	static getDerivedStateFromProps(props, state) {
 		const isValueChanged = props.value !== state.prevValue;
@@ -87,11 +98,6 @@ class Input extends React.Component {
 			},
 		};
 	}
-
-	state = {
-		level: this.props.level,
-		value: this.props.value,
-	};
 
 	handleChange = event => {
 		let {value} = event.target;
@@ -121,14 +127,6 @@ class Input extends React.Component {
 			}
 		});
 	};
-
-	_checkValidity = _.debounce(event => {
-		const {pattern} = this.props;
-		const {value} = event.target;
-		const isValid = typeof pattern === 'function' ? (!value || pattern(value)) : event.target.checkValidity();
-
-		this.setState({level: isValid ? null : 'error'});
-	}, 500);
 
 	_shouldTruncateFractions(value) {
 		const {fractionalDigits} = this.props;
@@ -239,23 +237,23 @@ class Input extends React.Component {
 						onChange={this.handleChange}
 					/>
 					{icon &&
-						<span className="Input__icon">
+					<span className="Input__icon">
 							<img src={icon} width={iconSize}/>
 						</span>
 					}
 					{View &&
-						<span className="Input__view">
+					<span className="Input__view">
 							<View/>
 						</span>
 					}
 					{Button &&
-						<span className="Input__view Input__button">
+					<span className="Input__view Input__button">
 							<Button/>
 						</span>
 					}
 				</div>
 				{((level && message) || message) &&
-					<span className="Input__text">
+				<span className="Input__text">
 						<p>{message}</p>
 					</span>
 				}

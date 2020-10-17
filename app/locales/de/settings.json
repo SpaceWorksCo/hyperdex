@@ -1,30 +1,30 @@
 {
-	"app": "App",
-	"deletePortfolio": {
-		"confirm": "I understand, delete this portfolio",
-		"description": "<0>Unless you save your seed phrase, this action cannot be undone and will permanently delete the <1><0>{{name}}</0></1> portfolio.</0><1>Please type in the name of the portfolio to confirm.</1>",
-		"title": "Portfolio löschen"
-	},
-	"enabledCurrencies": "Aktivierte Währungen",
-	"logOutAppSettings": "<0><0>Ausloggen,</0> um weitere App-Einstellungen zu sehen.</0>",
-	"name": "Name",
-	"manage": "Verwalten",
-	"export": {
-		"sectionLabel": "Export",
-		"exportTradeHistory": "Export Trade History to CSV",
-		"trades": "trades"
-	},
-	"portfolio": "Portfolio",
-	"seedPhrase": {
-		"enterPassword": "Passwort eingeben",
-		"submit": "Senden",
-		"title": "Seed-Schlüssel ansehen"
-	},
-	"title": "Einstellungen",
-	"theme": {
-		"theme": "Thema",
-		"dark": "Dunkel",
-		"light": "Hell",
-		"system": "System"
-	}
+  "app": "App",
+  "deletePortfolio": {
+	"confirm": "I understand, delete this portfolio",
+	"description": "<0>Unless you save your seed phrase, this action cannot be undone and will permanently delete the <1><0>{{name}}</0></1> portfolio.</0><1>Please type in the name of the portfolio to confirm.</1>",
+	"title": "Portfolio löschen"
+  },
+  "enabledCurrencies": "Aktivierte Währungen",
+  "logOutAppSettings": "<0><0>Ausloggen,</0> um weitere App-Einstellungen zu sehen.</0>",
+  "name": "Name",
+  "manage": "Verwalten",
+  "export": {
+	"sectionLabel": "Export",
+	"exportTradeHistory": "Export Trade History to CSV",
+	"trades": "trades"
+  },
+  "portfolio": "Portfolio",
+  "seedPhrase": {
+	"enterPassword": "Passwort eingeben",
+	"submit": "Senden",
+	"title": "Seed-Schlüssel ansehen"
+  },
+  "title": "Einstellungen",
+  "theme": {
+	"theme": "Thema",
+	"dark": "Dunkel",
+	"light": "Hell",
+	"system": "System"
+  }
 }

@@ -36,9 +36,16 @@ class Modal extends React.Component {
 		animationDuration: 300,
 		closeOnEsc: true,
 		closeOnMaskClick: true,
-		onClose: () => {},
-		didClose: () => {},
+		onClose: () => {
+		},
+		didClose: () => {
+		},
 	};
+	state = {
+		isOpen: false,
+		animationType: 'close',
+	};
+	elementRef = React.createRef();
 
 	static getDerivedStateFromProps(props, state) {
 		const isClosed = (!state.isOpen || state.animationType === 'close') && !props.open;
@@ -58,13 +65,6 @@ class Modal extends React.Component {
 			animationType: isOpening ? 'open' : 'close',
 		};
 	}
-
-	state = {
-		isOpen: false,
-		animationType: 'close',
-	};
-
-	elementRef = React.createRef();
 
 	closeHandler = () => {
 		this.props.onClose();
@@ -155,7 +155,7 @@ class Modal extends React.Component {
 							<div className="Modal__close__icon"/>
 						</div>
 						{icon &&
-							<img className="Modal__icon" src={icon}/>
+						<img className="Modal__icon" src={icon}/>
 						}
 						<h1>{title}</h1>
 					</header>

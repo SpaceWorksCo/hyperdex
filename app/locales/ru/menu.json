@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Настройки…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Веб-сайт",
-		"sourceCode": "Исходный код",
-		"reportSecurityIssue": "Сообщить о проблеме безопасности…",
-		"reportIssue": "Сообщить о проблеме…",
-		"about": "О приложении {{appName}}"
-	},
-	"other": {
-		"file": "Файл"
-	},
-	"portfolio": {
-		"title": "Портфель",
-		"dashboard": "Панель",
-		"swap": "Своп",
-		"exchange": "Обмен",
-		"trades": "Сделки",
-		"settings": "Настройки",
-		"goToPrevView": "Перейти к предыдущему виду",
-		"goToNextView": "Перейти к следующему виду",
-		"logOut": "Выйти"
-	}
+  "app": {
+	"preferences": "Настройки…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Веб-сайт",
+	"sourceCode": "Исходный код",
+	"reportSecurityIssue": "Сообщить о проблеме безопасности…",
+	"reportIssue": "Сообщить о проблеме…",
+	"about": "О приложении {{appName}}"
+  },
+  "other": {
+	"file": "Файл"
+  },
+  "portfolio": {
+	"title": "Портфель",
+	"dashboard": "Панель",
+	"swap": "Своп",
+	"exchange": "Обмен",
+	"trades": "Сделки",
+	"settings": "Настройки",
+	"goToPrevView": "Перейти к предыдущему виду",
+	"goToNextView": "Перейти к следующему виду",
+	"logOut": "Выйти"
+  }
 }

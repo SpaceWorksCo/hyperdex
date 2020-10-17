@@ -28,7 +28,8 @@ CopyButton.propTypes = {
 
 CopyButton.defaultProps = {
 	className: '',
-	onClick: () => {},
+	onClick: () => {
+	},
 };
 
 export default CopyButton;

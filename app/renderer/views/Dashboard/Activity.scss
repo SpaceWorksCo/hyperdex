@@ -1,102 +1,102 @@
 .Dashboard--Activity {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	header {
-		display: flex;
-		align-items: center;
-		height: 60px;
-		padding: 0 20px;
+  header {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+	border-bottom: 1px solid var(--section-border-color);
+
+	h3 {
+	  margin: 0;
+	}
+  }
+
+  main {
+	display: flex;
+	flex: 1;
+
+	.ActivityList {
+	  flex: 1;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  margin-bottom: 20px;
+	  font-size: 12px;
+	  height: 0;
+	  min-height: 100%;
+	  padding: 0 20px;
+
+	  table {
+		display: table;
+		width: 100%;
+
+		// Fixes weirdness in how the table cells are horizontally aligned
+		td:nth-child(2) {
+		  padding-left: 14px;
+		}
+
+		@media only screen and (min-width: 1190px) {
+		  table-layout: fixed;
+
+		  td:nth-child(2) {
+			padding-left: unset;
+		  }
+		}
+	  }
+
+	  tr {
+		white-space: nowrap;
 		border-bottom: 1px solid var(--section-border-color);
 
-		h3 {
-			margin: 0;
+		&:last-child {
+		  border: none;
 		}
-	}
+	  }
 
-	main {
+	  td {
+		vertical-align: middle;
+		padding: 18px 10px 18px 0;
+	  }
+
+	  td:last-child {
+		padding-right: 0;
+	  }
+
+	  .timestamp div {
 		display: flex;
-		flex: 1;
+		flex-direction: column;
+		font-size: 14px;
+		color: var(--text-color);
 
-		.ActivityList {
-			flex: 1;
-			overflow-x: hidden;
-			overflow-y: auto;
-			margin-bottom: 20px;
-			font-size: 12px;
-			height: 0;
-			min-height: 100%;
-			padding: 0 20px;
-
-			table {
-				display: table;
-				width: 100%;
-
-				// Fixes weirdness in how the table cells are horizontally aligned
-				td:nth-child(2) {
-					padding-left: 14px;
-				}
-
-				@media only screen and (min-width: 1190px) {
-					table-layout: fixed;
-
-					td:nth-child(2) {
-						padding-left: unset;
-					}
-				}
-			}
-
-			tr {
-				white-space: nowrap;
-				border-bottom: 1px solid var(--section-border-color);
-
-				&:last-child {
-					border: none;
-				}
-			}
-
-			td {
-				vertical-align: middle;
-				padding: 18px 10px 18px 0;
-			}
-
-			td:last-child {
-				padding-right: 0;
-			}
-
-			.timestamp div {
-				display: flex;
-				flex-direction: column;
-				font-size: 14px;
-				color: var(--text-color);
-
-				> div:first-child {
-					margin-bottom: 2px;
-				}
-			}
-
-			.type div {
-				display: flex;
-				flex-direction: column;
-			}
-
-			.value {
-				text-align: right;
-				white-space: normal;
-
-				&-description {
-					color: var(--text-color);
-				}
-			}
-
-			.value,
-			.type {
-				&-title {
-					font-size: 16px;
-					font-weight: 600;
-					margin-bottom: 2px;
-				}
-			}
+		> div:first-child {
+		  margin-bottom: 2px;
 		}
+	  }
+
+	  .type div {
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  .value {
+		text-align: right;
+		white-space: normal;
+
+		&-description {
+		  color: var(--text-color);
+		}
+	  }
+
+	  .value,
+	  .type {
+		&-title {
+		  font-size: 16px;
+		  font-weight: 600;
+		  margin-bottom: 2px;
+		}
+	  }
 	}
+  }
 }

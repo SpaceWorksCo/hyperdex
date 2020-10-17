@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "प्राथमिकताएँ..."
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "वेबसाइट",
-		"sourceCode": "सोर्स कोड",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "किसी समस्या की रिपोर्ट करें…",
-		"about": "{{appName}} के बारे में"
-	},
-	"other": {
-		"file": "फ़ाइल"
-	},
-	"portfolio": {
-		"title": "पोर्टफोलियो",
-		"dashboard": "डैशबोर्ड",
-		"swap": "स्वैप करें",
-		"exchange": "एक्सचेंज",
-		"trades": "ट्रेड",
-		"settings": "सेटिंग",
-		"goToPrevView": "पिछले व्यू पर जाएँ",
-		"goToNextView": "अगले व्यू पर जाएँ",
-		"logOut": "लॉग आउट"
-	}
+  "app": {
+	"preferences": "प्राथमिकताएँ..."
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "वेबसाइट",
+	"sourceCode": "सोर्स कोड",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "किसी समस्या की रिपोर्ट करें…",
+	"about": "{{appName}} के बारे में"
+  },
+  "other": {
+	"file": "फ़ाइल"
+  },
+  "portfolio": {
+	"title": "पोर्टफोलियो",
+	"dashboard": "डैशबोर्ड",
+	"swap": "स्वैप करें",
+	"exchange": "एक्सचेंज",
+	"trades": "ट्रेड",
+	"settings": "सेटिंग",
+	"goToPrevView": "पिछले व्यू पर जाएँ",
+	"goToNextView": "अगले व्यू पर जाएँ",
+	"logOut": "लॉग आउट"
+  }
 }

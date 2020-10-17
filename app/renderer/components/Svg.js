@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Svg = ({
-	size,
-	fill,
-	hoverFill,
-	activeFill,
-	children,
-	...props
-}) => (
+				 size,
+				 fill,
+				 hoverFill,
+				 activeFill,
+				 children,
+				 ...props
+			 }) => (
 	<svg {...props}>
 		{children}
 		<style jsx>

@@ -1,67 +1,67 @@
 {
-	"tempMessageDescription": "Enkle atombytter med minimal brukerinteraksjon",
-	"tempMessageTitle": "Kommer snart…",
-	"timedOut": "Byttehandel utløpte",
-	"title": "Bytte",
-	"details": {
-		"aliceclaim": "Alice krav",
-		"alicereclaim": "Alice tilbakekrav",
-		"alicepayment": "Alice betaling",
-		"alicespend": "Alice brukt",
-		"bobdeposit": "Bob innskudd",
-		"bobpayment": "Bob betaling",
-		"broadcast": "Kringkastet",
-		"buy": "Kjøp",
-		"copyDebugData": "Kopiér feilsøkingsdata for byttehandelen",
-		"exchanging": "Utveksler",
-		"executed": "Utført",
-		"for": "For",
-		"myfee": "Min gebyr",
-		"order": "Ordre",
-		"requested": "Forespurt",
-		"pending": "Ventende",
-		"price": "Pris",
-		"sell": "Selg",
-		"stats": "Den utførte prisen var {{percentCheaperThanRequested}}% billigere enn angitt!",
-		"transactions": "Transaksjoner",
-		"youExchanged": "Du byttet",
-		"youReceived": "Du mottok",
-		"yourOffer": "Ditt bud",
-		"view": "Vis"
-	},
-	"list": {
-		"baseAmount": "Grunnbeløp",
-		"date": "Dato",
-		"cancel": "Avbryt",
-		"empty": "Ingen ordrer",
-		"pair": "Par",
-		"quoteAmount": "Sitatbeløp",
-		"status": "Status"
-	},
-	"status": {
-		"completed": "Fullført",
-		"failed": "Mislyktes",
-		"matched": "Matchet",
-		"reverted": "Tilbakestilt",
-		"pending": "Ventende",
-		"open": "Åpen",
-		"unmatched": "Umatchet",
-		"cancelled": "Avbrutt"
-	},
-	"statusInformation": {
-		"reverted": "Byttehandelen ble tilbakestilt på grunn av tilkoblingsproblemer."
-	},
-	"toggleAdvancedButton": {
-		"more": "Mer",
-		"less": "Mindre"
-	},
-	"filter": {
-		"buy": "Kjøp",
-		"date": "Dato",
-		"dateFrom": "Fra",
-		"dateTo": "Til",
-		"pair": "Par",
-		"sell": "Salg",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Enkle atombytter med minimal brukerinteraksjon",
+  "tempMessageTitle": "Kommer snart…",
+  "timedOut": "Byttehandel utløpte",
+  "title": "Bytte",
+  "details": {
+	"aliceclaim": "Alice krav",
+	"alicereclaim": "Alice tilbakekrav",
+	"alicepayment": "Alice betaling",
+	"alicespend": "Alice brukt",
+	"bobdeposit": "Bob innskudd",
+	"bobpayment": "Bob betaling",
+	"broadcast": "Kringkastet",
+	"buy": "Kjøp",
+	"copyDebugData": "Kopiér feilsøkingsdata for byttehandelen",
+	"exchanging": "Utveksler",
+	"executed": "Utført",
+	"for": "For",
+	"myfee": "Min gebyr",
+	"order": "Ordre",
+	"requested": "Forespurt",
+	"pending": "Ventende",
+	"price": "Pris",
+	"sell": "Selg",
+	"stats": "Den utførte prisen var {{percentCheaperThanRequested}}% billigere enn angitt!",
+	"transactions": "Transaksjoner",
+	"youExchanged": "Du byttet",
+	"youReceived": "Du mottok",
+	"yourOffer": "Ditt bud",
+	"view": "Vis"
+  },
+  "list": {
+	"baseAmount": "Grunnbeløp",
+	"date": "Dato",
+	"cancel": "Avbryt",
+	"empty": "Ingen ordrer",
+	"pair": "Par",
+	"quoteAmount": "Sitatbeløp",
+	"status": "Status"
+  },
+  "status": {
+	"completed": "Fullført",
+	"failed": "Mislyktes",
+	"matched": "Matchet",
+	"reverted": "Tilbakestilt",
+	"pending": "Ventende",
+	"open": "Åpen",
+	"unmatched": "Umatchet",
+	"cancelled": "Avbrutt"
+  },
+  "statusInformation": {
+	"reverted": "Byttehandelen ble tilbakestilt på grunn av tilkoblingsproblemer."
+  },
+  "toggleAdvancedButton": {
+	"more": "Mer",
+	"less": "Mindre"
+  },
+  "filter": {
+	"buy": "Kjøp",
+	"date": "Dato",
+	"dateFrom": "Fra",
+	"dateTo": "Til",
+	"pair": "Par",
+	"sell": "Salg",
+	"type": "Type"
+  }
 }

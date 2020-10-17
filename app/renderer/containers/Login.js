@@ -100,6 +100,10 @@ class LoginContainer extends Container {
 		this.loadPortfolios();
 	}
 
+	get selectedPortfolio() {
+		return this.portfolioFromId(this.state.selectedPortfolioId);
+	}
+
 	setActiveView(activeView) {
 		this.setState({activeView});
 	}
@@ -122,10 +126,6 @@ class LoginContainer extends Container {
 
 	portfolioFromId(id) {
 		return this.state.portfolios.find(portfolio => portfolio.id === id);
-	}
-
-	get selectedPortfolio() {
-		return this.portfolioFromId(this.state.selectedPortfolioId);
 	}
 
 	async handleLogin(portfolioId, password) {

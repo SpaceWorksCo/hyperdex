@@ -1,77 +1,76 @@
 {
-	"tempMessageDescription": "Simple atomic swaps with minimal user interaction",
-	"tempMessageTitle": "Coming soon…",
-	"timedOut": "Swap timed out",
-	"title": "Swap",
-	"details": {
-		"broadcast": "Broadcast",
-		"buy": "Buy",
-		"copyDebugData": "Copy Swap Debug Data",
-		"exchanging": "Exchanging",
-		"executed": "Executed",
-		"for": "For",
-		"myfee": "My Fee",
-		"order": "Order",
-		"requested": "Requested",
-		"pending": "Pending",
-		"price": "Price",
-		"sell": "Sell",
-		"stats": "The executed price was {{percentCheaperThanRequested}}% cheaper than requested!",
-		"transactions": "Transactions",
-		"youExchanged": "You exchanged",
-		"youReceived": "You received",
-		"yourOffer": "Your offer",
-		"view": "View"
-	},
-	"swapStages": {
-		"TakerFeeSent": "Taker fee sent",
-		"MakerPaymentReceived": "Maker payment received",
-		"MakerPaymentWaitConfirmStarted": "Maker payment confirmation started",
-		"MakerPaymentValidatedAndConfirmed": "Maker payment validated and confirmed",
-		"TakerPaymentSent": "Taker payment sent",
-		"TakerPaymentSpent": "Taker payment spent",
-		"MakerPaymentSpent": "Maker payment spent",
-
-		"TakerFeeValidated": "Taker free validated",
-		"MakerPaymentSent": "Maker payment sent",
-		"TakerPaymentReceived": "Taker payment received",
-		"TakerPaymentWaitConfirmStarted": "Taker payment confirmation started",
-		"TakerPaymentValidatedAndConfirmed": "Taker payment validated and confirmed",
-		"TakerPaymentSpent": "Taker payment spent"
-	},
-	"list": {
-		"baseAmount": "Base amount",
-		"date": "Date",
-		"cancel": "Cancel",
-		"empty": "No orders",
-		"pair": "Pair",
-		"quoteAmount": "Quote amount",
-		"status": "Status"
-	},
-	"status": {
-		"completed": "Completed",
-		"failed": "Failed",
-		"matched": "Matched",
-		"reverted": "Reverted",
-		"pending": "Pending",
-		"open": "Open",
-		"unmatched": "Unmatched",
-		"cancelled": "Cancelled"
-	},
-	"statusInformation": {
-		"reverted": "The swap was reverted due to connectivity issues."
-	},
-	"toggleAdvancedButton": {
-		"more": "More",
-		"less": "Less"
-	},
-	"filter": {
-		"buy": "Buy",
-		"date": "Date",
-		"dateFrom": "From",
-		"dateTo": "To",
-		"pair": "Pair",
-		"sell": "Sell",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Simple atomic swaps with minimal user interaction",
+  "tempMessageTitle": "Coming soon…",
+  "timedOut": "Swap timed out",
+  "title": "Swap",
+  "details": {
+	"broadcast": "Broadcast",
+	"buy": "Buy",
+	"copyDebugData": "Copy Swap Debug Data",
+	"exchanging": "Exchanging",
+	"executed": "Executed",
+	"for": "For",
+	"myfee": "My Fee",
+	"order": "Order",
+	"requested": "Requested",
+	"pending": "Pending",
+	"price": "Price",
+	"sell": "Sell",
+	"stats": "The executed price was {{percentCheaperThanRequested}}% cheaper than requested!",
+	"transactions": "Transactions",
+	"youExchanged": "You exchanged",
+	"youReceived": "You received",
+	"yourOffer": "Your offer",
+	"view": "View"
+  },
+  "swapStages": {
+	"TakerFeeSent": "Taker fee sent",
+	"MakerPaymentReceived": "Maker payment received",
+	"MakerPaymentWaitConfirmStarted": "Maker payment confirmation started",
+	"MakerPaymentValidatedAndConfirmed": "Maker payment validated and confirmed",
+	"TakerPaymentSent": "Taker payment sent",
+	"TakerPaymentSpent": "Taker payment spent",
+	"MakerPaymentSpent": "Maker payment spent",
+	"TakerFeeValidated": "Taker free validated",
+	"MakerPaymentSent": "Maker payment sent",
+	"TakerPaymentReceived": "Taker payment received",
+	"TakerPaymentWaitConfirmStarted": "Taker payment confirmation started",
+	"TakerPaymentValidatedAndConfirmed": "Taker payment validated and confirmed",
+	"TakerPaymentSpent": "Taker payment spent"
+  },
+  "list": {
+	"baseAmount": "Base amount",
+	"date": "Date",
+	"cancel": "Cancel",
+	"empty": "No orders",
+	"pair": "Pair",
+	"quoteAmount": "Quote amount",
+	"status": "Status"
+  },
+  "status": {
+	"completed": "Completed",
+	"failed": "Failed",
+	"matched": "Matched",
+	"reverted": "Reverted",
+	"pending": "Pending",
+	"open": "Open",
+	"unmatched": "Unmatched",
+	"cancelled": "Cancelled"
+  },
+  "statusInformation": {
+	"reverted": "The swap was reverted due to connectivity issues."
+  },
+  "toggleAdvancedButton": {
+	"more": "More",
+	"less": "Less"
+  },
+  "filter": {
+	"buy": "Buy",
+	"date": "Date",
+	"dateFrom": "From",
+	"dateTo": "To",
+	"pair": "Pair",
+	"sell": "Sell",
+	"type": "Type"
+  }
 }

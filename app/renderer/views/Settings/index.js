@@ -59,7 +59,8 @@ class Settings extends React.Component {
 								<h3>{t('app')}</h3>
 								<ThemeSetting/>
 								<Trans i18n={instance} i18nKey="logOutAppSettings" t={t}>
-									<p><Link onClick={this.handleLogOutLinkClick}>Log out</Link> to see more app settings.</p>
+									<p><Link onClick={this.handleLogOutLinkClick}>Log out</Link> to see more app
+										settings.</p>
 								</Trans>
 							</div>
 						</main>

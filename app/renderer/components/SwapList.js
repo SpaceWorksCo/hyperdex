@@ -84,10 +84,12 @@ const SwapHeader = props => (
 		<SwapHeaderColumn {...props} className="pairs" sortKeys={['baseCurrency', 'quoteCurrency', 'timeStarted']}>
 			{t('list.pair')}
 		</SwapHeaderColumn>
-		<SwapHeaderColumn {...props} className="base-amount" sortKeys={['baseCurrency', 'baseCurrencyAmount', 'timeStarted']}>
+		<SwapHeaderColumn {...props} className="base-amount"
+						  sortKeys={['baseCurrency', 'baseCurrencyAmount', 'timeStarted']}>
 			{t('list.baseAmount')}
 		</SwapHeaderColumn>
-		<SwapHeaderColumn {...props} className="quote-amount" sortKeys={['quoteCurrency', 'quoteCurrencyAmount', 'timeStarted']}>
+		<SwapHeaderColumn {...props} className="quote-amount"
+						  sortKeys={['quoteCurrency', 'quoteCurrencyAmount', 'timeStarted']}>
 			{t('list.quoteAmount')}
 		</SwapHeaderColumn>
 		<SwapHeaderColumn {...props} className="status" sortKeys={['status', 'timeStarted']}>
@@ -143,6 +145,10 @@ class SwapList extends React.Component {
 		sortDirection: this.props.sortDirection,
 		openedSwapId: null,
 	};
+	cache = new CellMeasurerCache({
+		fixedWidth: true,
+		keyMapper: () => 1, // Only measure height on first item and assume rest has the same
+	});
 
 	openSwap = swapId => {
 		this.setState({openedSwapId: swapId});
@@ -151,11 +157,6 @@ class SwapList extends React.Component {
 	closeSwap = () => {
 		this.setState({openedSwapId: null});
 	};
-
-	cache = new CellMeasurerCache({
-		fixedWidth: true,
-		keyMapper: () => 1, // Only measure height on first item and assume rest has the same
-	});
 
 	handleResize = () => {
 		this.cache.clearAll();

@@ -1,12 +1,12 @@
 {
-	"settings": {
-		"customUrl": "Custom Marketmaker URL",
-		"exampleUrl": "Example: {{url}}",
-		"invalidUrl": "Invalid URL",
-		"title": "App settings"
-	},
-	"donate": {
-		"title": "Donate",
-		"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
-	}
+  "settings": {
+	"customUrl": "Custom Marketmaker URL",
+	"exampleUrl": "Example: {{url}}",
+	"invalidUrl": "Invalid URL",
+	"title": "App settings"
+  },
+  "donate": {
+	"title": "Donate",
+	"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
+  }
 }

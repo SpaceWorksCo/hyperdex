@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import {ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip} from 'recharts';
-import {format as formatDate, subMonths, subDays, subHours, subMinutes, getDaysInMonth} from 'date-fns';
+import {Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis} from 'recharts';
+import {format as formatDate, getDaysInMonth, subDays, subHours, subMinutes, subMonths} from 'date-fns';
 import {formatCurrency} from '../util';
 import './TimeSeriesChart.scss';
 
@@ -109,11 +109,11 @@ class TimeSeriesChart extends React.Component {
 							padding={{top: 5}}
 						/>
 						{data &&
-							<Tooltip
-								content={<CustomTooltip/>}
-								isAnimationActive={false}
-								animationDuration={0}
-							/>
+						<Tooltip
+							content={<CustomTooltip/>}
+							isAnimationActive={false}
+							animationDuration={0}
+						/>
 						}
 					</AreaChart>
 				</ResponsiveContainer>

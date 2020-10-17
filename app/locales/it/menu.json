@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Impostazioni…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Sito web",
-		"sourceCode": "Codice sorgente",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Segnala un problema…",
-		"about": "Informazioni su {{appName}}"
-	},
-	"other": {
-		"file": "File"
-	},
-	"portfolio": {
-		"title": "Portafoglio",
-		"dashboard": "Pannello di controllo",
-		"swap": "Scambia",
-		"exchange": "Scambio",
-		"trades": "Operazioni",
-		"settings": "Impostazioni",
-		"goToPrevView": "Vai alla vista precedente",
-		"goToNextView": "Vai alla vista successiva",
-		"logOut": "Esci"
-	}
+  "app": {
+	"preferences": "Impostazioni…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Sito web",
+	"sourceCode": "Codice sorgente",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Segnala un problema…",
+	"about": "Informazioni su {{appName}}"
+  },
+  "other": {
+	"file": "File"
+  },
+  "portfolio": {
+	"title": "Portafoglio",
+	"dashboard": "Pannello di controllo",
+	"swap": "Scambia",
+	"exchange": "Scambio",
+	"trades": "Operazioni",
+	"settings": "Impostazioni",
+	"goToPrevView": "Vai alla vista precedente",
+	"goToNextView": "Vai alla vista successiva",
+	"logOut": "Esci"
+  }
 }

@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Preferensi…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Situs web",
-		"sourceCode": "Kode sumber",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Laporkan masalah…",
-		"about": "Tentang {{appName}}"
-	},
-	"other": {
-		"file": "File"
-	},
-	"portfolio": {
-		"title": "Portfolio",
-		"dashboard": "Dasbor",
-		"swap": "Swap",
-		"exchange": "Pertukaran",
-		"trades": "Trade",
-		"settings": "Pengaturan",
-		"goToPrevView": "Pergi ke tampilan sebelumnya",
-		"goToNextView": "Pergi ke tampilan berikutnya",
-		"logOut": "Log out"
-	}
+  "app": {
+	"preferences": "Preferensi…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Situs web",
+	"sourceCode": "Kode sumber",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Laporkan masalah…",
+	"about": "Tentang {{appName}}"
+  },
+  "other": {
+	"file": "File"
+  },
+  "portfolio": {
+	"title": "Portfolio",
+	"dashboard": "Dasbor",
+	"swap": "Swap",
+	"exchange": "Pertukaran",
+	"trades": "Trade",
+	"settings": "Pengaturan",
+	"goToPrevView": "Pergi ke tampilan sebelumnya",
+	"goToNextView": "Pergi ke tampilan berikutnya",
+	"logOut": "Log out"
+  }
 }

@@ -1,10 +1,10 @@
 @import '../styles/variables';
 
 .BackButton {
-	@include icon-button;
+  @include icon-button;
 
-	svg {
-		width: 8px;
-		height: 12px;
-	}
+  svg {
+	width: 8px;
+	height: 12px;
+  }
 }

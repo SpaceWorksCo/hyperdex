@@ -66,13 +66,13 @@ const Trades = props => (
 						</nav>
 						<div className="stats">
 							{stats &&
-								<p>
-									{t('stats', {
-										count: stats.successfulSwapCount,
-										currencyCount: stats.currencyCount,
-										totalSwapsWorthInUsd: formatCurrency(stats.totalSwapsWorthInUsd),
-									})}
-								</p>
+							<p>
+								{t('stats', {
+									count: stats.successfulSwapCount,
+									currencyCount: stats.currencyCount,
+									totalSwapsWorthInUsd: formatCurrency(stats.totalSwapsWorthInUsd),
+								})}
+							</p>
 							}
 						</div>
 					</header>

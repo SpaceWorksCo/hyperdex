@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Mapendeleo…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Tovuti",
-		"sourceCode": "Msimbo chanzo",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Tuma ripoti kuhusu hitilafu…",
-		"about": "Kuhusu {{appName}}"
-	},
-	"other": {
-		"file": "Faili"
-	},
-	"portfolio": {
-		"title": "Uwekezaji",
-		"dashboard": "Dashibodi",
-		"swap": "Badilisha",
-		"exchange": "Badilisha",
-		"trades": "Biashara",
-		"settings": "Mipangilio",
-		"goToPrevView": "Nenda kwenye Mwonekano Uliopita",
-		"goToNextView": "Nenda kwenye Mwonekano Unaofuata",
-		"logOut": "Ondoka"
-	}
+  "app": {
+	"preferences": "Mapendeleo…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Tovuti",
+	"sourceCode": "Msimbo chanzo",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Tuma ripoti kuhusu hitilafu…",
+	"about": "Kuhusu {{appName}}"
+  },
+  "other": {
+	"file": "Faili"
+  },
+  "portfolio": {
+	"title": "Uwekezaji",
+	"dashboard": "Dashibodi",
+	"swap": "Badilisha",
+	"exchange": "Badilisha",
+	"trades": "Biashara",
+	"settings": "Mipangilio",
+	"goToPrevView": "Nenda kwenye Mwonekano Uliopita",
+	"goToNextView": "Nenda kwenye Mwonekano Unaofuata",
+	"logOut": "Ondoka"
+  }
 }

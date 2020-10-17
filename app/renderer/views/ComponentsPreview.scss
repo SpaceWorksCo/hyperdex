@@ -1,14 +1,14 @@
 .ComponentsPreview {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
 
-	> * {
-		margin: 10px;
-	}
+  > * {
+	margin: 10px;
+  }
 
-	.Input {
-		width: auto;
-	}
+  .Input {
+	width: auto;
+  }
 }

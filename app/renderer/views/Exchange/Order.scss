@@ -3,194 +3,194 @@
 
 .Exchange--Buy,
 .Exchange--Sell {
-	flex-direction: column;
-	padding: 20px;
+  flex-direction: column;
+  padding: 20px;
 
-	.top {
-		align-items: start;
+  .top {
+	align-items: start;
 
-		.currency-selector {
-			.SelectOption__label,
-			.Select-input > input {
-				font-size: 16px;
-				font-weight: 500;
-			}
+	.currency-selector {
+	  .SelectOption__label,
+	  .Select-input > input {
+		font-size: 16px;
+		font-weight: 500;
+	  }
 
-			.Select-control {
-				background: var(--input-lighter-background-color);
-				border-color: var(--input-lighter-border-color);
-			}
+	  .Select-control {
+		background: var(--input-lighter-background-color);
+		border-color: var(--input-lighter-border-color);
+	  }
 
-			.Select-input {
-				padding-left: 38px;
-			}
+	  .Select-input {
+		padding-left: 38px;
+	  }
 
-			.Select-input > input {
-				color: var(--text-color);
-				width: 150px !important; // stylelint-disable-line declaration-no-important
-			}
-		}
-
-		.balance {
-			margin: 12px 0;
-
-			span {
-				user-select: text;
-				cursor: auto;
-				white-space: nowrap;
-			}
-		}
-
-		.address {
-			font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-			font-size: 9.5px;
-		}
+	  .Select-input > input {
+		color: var(--text-color);
+		width: 150px !important; // stylelint-disable-line declaration-no-important
+	  }
 	}
 
-	.center {
-		flex: 1;
+	.balance {
+	  margin: 12px 0;
+
+	  span {
+		user-select: text;
+		cursor: auto;
+		white-space: nowrap;
+	  }
+	}
+
+	.address {
+	  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+	  font-size: 9.5px;
+	}
+  }
+
+  .center {
+	flex: 1;
+	position: relative;
+	min-height: 80px;
+
+	.table-wrapper {
+	  position: absolute;
+	  top: 30px; // The height of the section header
+	  right: 0;
+	  bottom: 20px;
+	  left: 0;
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	  font-size: 12px;
+	  color: var(--text-color);
+	  cursor: default;
+
+	  // Chrome doesn't yet support making `thead` sticky...
+	  // https://bugs.chromium.org/p/chromium/issues/detail?id=702927
+	  thead tr:first-child th {
+		background-color: var(--widget-background-color);
+		position: sticky;
+		top: 0;
+		font-size: 12px;
+		font-weight: 500;
+		border-bottom: 1px solid var(--section-border-color);
+	  }
+
+	  tbody tr {
+		border: none;
+
+		&:hover {
+		  background-color: var(--order-list-item-hover);
+		}
+	  }
+
+	  td,
+	  th {
+		padding: 3px; // TODO: Remove it from the global style
+	  }
+	}
+  }
+
+  .bottom {
+	align-items: end;
+
+	h3 {
+	  border-bottom: 1px solid var(--section-border-color);
+	  padding-bottom: 6px;
+	}
+
+	.form-section {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+
+	  label {
+		font-size: var(--text-size);
+		color: var(--text-color);
+	  }
+
+	  .Input {
+		width: 140px;
+	  }
+
+	  .Input input {
+		min-width: unset; // TODO: Fix this at the source
+	  }
+
+	  .max-price-button {
+		color: #fff;
+		font-size: 12px;
+	  }
+
+	  .target-price-button,
+	  .max-price-button {
+		color: var(--text-color2);
+
+		&[disabled] {
+		  opacity: 0.2;
+		  pointer-events: none;
+		}
+	  }
+
+	  &.total-section {
 		position: relative;
-		min-height: 80px;
+	  }
 
-		.table-wrapper {
-			position: absolute;
-			top: 30px; // The height of the section header
-			right: 0;
-			bottom: 20px;
-			left: 0;
-			overflow-x: hidden;
-			overflow-y: auto;
-			font-size: 12px;
-			color: var(--text-color);
-			cursor: default;
-
-			// Chrome doesn't yet support making `thead` sticky...
-			// https://bugs.chromium.org/p/chromium/issues/detail?id=702927
-			thead tr:first-child th {
-				background-color: var(--widget-background-color);
-				position: sticky;
-				top: 0;
-				font-size: 12px;
-				font-weight: 500;
-				border-bottom: 1px solid var(--section-border-color);
-			}
-
-			tbody tr {
-				border: none;
-
-				&:hover {
-					background-color: var(--order-list-item-hover);
-				}
-			}
-
-			td,
-			th {
-				padding: 3px; // TODO: Remove it from the global style
-			}
-		}
+	  .swap-worth {
+		position: absolute;
+		bottom: -23px;
+		right: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		text-align: center;
+	  }
 	}
 
-	.bottom {
-		align-items: end;
+	.Button {
+	  margin-top: 30px;
+	}
+  }
 
-		h3 {
-			border-bottom: 1px solid var(--section-border-color);
-			padding-bottom: 6px;
-		}
-
-		.form-section {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			label {
-				font-size: var(--text-size);
-				color: var(--text-color);
-			}
-
-			.Input {
-				width: 140px;
-			}
-
-			.Input input {
-				min-width: unset; // TODO: Fix this at the source
-			}
-
-			.max-price-button {
-				color: #fff;
-				font-size: 12px;
-			}
-
-			.target-price-button,
-			.max-price-button {
-				color: var(--text-color2);
-
-				&[disabled] {
-					opacity: 0.2;
-					pointer-events: none;
-				}
-			}
-
-			&.total-section {
-				position: relative;
-			}
-
-			.swap-worth {
-				position: absolute;
-				bottom: -23px;
-				right: 0;
-				left: 0;
-				margin: 0;
-				padding: 0;
-				font-size: 12px;
-				text-align: center;
-			}
-		}
-
-		.Button {
-			margin-top: 30px;
-		}
+  @media (min-width: 1400px) {
+	.top .address {
+	  font-size: 11px;
 	}
 
-	@media (min-width: 1400px) {
-		.top .address {
-			font-size: 11px;
-		}
+	.center .table-wrapper {
+	  font-size: 13px;
 
-		.center .table-wrapper {
-			font-size: 13px;
-
-			thead tr:first-child th {
-				font-size: 13px;
-			}
-		}
-
-		.bottom .form-section .swap-worth {
-			font-size: 13px;
-		}
-
-		.bottom .form-section label {
-			font-size: 14px;
-		}
+	  thead tr:first-child th {
+		font-size: 13px;
+	  }
 	}
+
+	.bottom .form-section .swap-worth {
+	  font-size: 13px;
+	}
+
+	.bottom .form-section label {
+	  font-size: 14px;
+	}
+  }
 }
 
 .Exchange--Buy {
-	.table-wrapper {
-		tbody {
-			td:first-child {
-				color: var(--red-color);
-			}
-		}
+  .table-wrapper {
+	tbody {
+	  td:first-child {
+		color: var(--red-color);
+	  }
 	}
+  }
 }
 
 .Exchange--Sell {
-	.table-wrapper {
-		tbody {
-			td:first-child {
-				color: var(--green-color);
-			}
-		}
+  .table-wrapper {
+	tbody {
+	  td:first-child {
+		color: var(--green-color);
+	  }
 	}
+  }
 }

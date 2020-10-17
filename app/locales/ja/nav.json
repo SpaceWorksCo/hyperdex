@@ -1,7 +1,7 @@
 {
-	"dashboard": "ダッシュボード",
-	"exchange": "取引所",
-	"settings": "設定",
-	"swap": "スワップ",
-	"trades": "トレード"
+  "dashboard": "ダッシュボード",
+  "exchange": "取引所",
+  "settings": "設定",
+  "swap": "スワップ",
+  "trades": "トレード"
 }

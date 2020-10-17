@@ -1,67 +1,67 @@
 {
-	"tempMessageDescription": "Swap atomik sederhana dengan interaksi pengguna minimal",
-	"tempMessageTitle": "Segera…",
-	"timedOut": "Waktu swap habis",
-	"title": "Swap",
-	"details": {
-		"aliceclaim": "Alice Claim",
-		"alicereclaim": "Alice Reclaim",
-		"alicepayment": "Pembayaran Alice",
-		"alicespend": "Pengeluaran Alice",
-		"bobdeposit": "Deposit Bob",
-		"bobpayment": "Pembayaran Bob",
-		"broadcast": "Siarkan",
-		"buy": "Beli",
-		"copyDebugData": "Salin Data Debug Swap",
-		"exchanging": "Pertukaran",
-		"executed": "Eksekusi",
-		"for": "Untuk",
-		"myfee": "Bayaran saya",
-		"order": "Pesanan",
-		"requested": "Diminta",
-		"pending": "Penundaan",
-		"price": "Harga",
-		"sell": "Jual",
-		"stats": "Harga yang dieksekusi {{percentCheaperThanRequested}}% lebih murah daripada yang diminta!",
-		"transactions": "Transaksi",
-		"youExchanged": "Anda menukarkan",
-		"youReceived": "Anda menerima",
-		"yourOffer": "Tawaran Anda",
-		"view": "Tampilkan"
-	},
-	"list": {
-		"baseAmount": "Base amount",
-		"date": "Date",
-		"cancel": "Batal",
-		"empty": "No orders",
-		"pair": "Pair",
-		"quoteAmount": "Quote amount",
-		"status": "Status"
-	},
-	"status": {
-		"completed": "Selesai",
-		"failed": "Gagal",
-		"matched": "Sesuai",
-		"reverted": "Reverted",
-		"pending": "Penundaan",
-		"open": "Open",
-		"unmatched": "Tidak sesuai",
-		"cancelled": "Cancelled"
-	},
-	"statusInformation": {
-		"reverted": "The swap was reverted due to connectivity issues."
-	},
-	"toggleAdvancedButton": {
-		"more": "More",
-		"less": "Less"
-	},
-	"filter": {
-		"buy": "Buy",
-		"date": "Date",
-		"dateFrom": "From",
-		"dateTo": "To",
-		"pair": "Pair",
-		"sell": "Sell",
-		"type": "Type"
-	}
+  "tempMessageDescription": "Swap atomik sederhana dengan interaksi pengguna minimal",
+  "tempMessageTitle": "Segera…",
+  "timedOut": "Waktu swap habis",
+  "title": "Swap",
+  "details": {
+	"aliceclaim": "Alice Claim",
+	"alicereclaim": "Alice Reclaim",
+	"alicepayment": "Pembayaran Alice",
+	"alicespend": "Pengeluaran Alice",
+	"bobdeposit": "Deposit Bob",
+	"bobpayment": "Pembayaran Bob",
+	"broadcast": "Siarkan",
+	"buy": "Beli",
+	"copyDebugData": "Salin Data Debug Swap",
+	"exchanging": "Pertukaran",
+	"executed": "Eksekusi",
+	"for": "Untuk",
+	"myfee": "Bayaran saya",
+	"order": "Pesanan",
+	"requested": "Diminta",
+	"pending": "Penundaan",
+	"price": "Harga",
+	"sell": "Jual",
+	"stats": "Harga yang dieksekusi {{percentCheaperThanRequested}}% lebih murah daripada yang diminta!",
+	"transactions": "Transaksi",
+	"youExchanged": "Anda menukarkan",
+	"youReceived": "Anda menerima",
+	"yourOffer": "Tawaran Anda",
+	"view": "Tampilkan"
+  },
+  "list": {
+	"baseAmount": "Base amount",
+	"date": "Date",
+	"cancel": "Batal",
+	"empty": "No orders",
+	"pair": "Pair",
+	"quoteAmount": "Quote amount",
+	"status": "Status"
+  },
+  "status": {
+	"completed": "Selesai",
+	"failed": "Gagal",
+	"matched": "Sesuai",
+	"reverted": "Reverted",
+	"pending": "Penundaan",
+	"open": "Open",
+	"unmatched": "Tidak sesuai",
+	"cancelled": "Cancelled"
+  },
+  "statusInformation": {
+	"reverted": "The swap was reverted due to connectivity issues."
+  },
+  "toggleAdvancedButton": {
+	"more": "More",
+	"less": "Less"
+  },
+  "filter": {
+	"buy": "Buy",
+	"date": "Date",
+	"dateFrom": "From",
+	"dateTo": "To",
+	"pair": "Pair",
+	"sell": "Sell",
+	"type": "Type"
+  }
 }

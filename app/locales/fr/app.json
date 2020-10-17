@@ -1,12 +1,12 @@
 {
-	"settings": {
-		"customUrl": "URL d'animateur de marché personnalisée",
-		"exampleUrl": "Exemple : {{url}}",
-		"invalidUrl": "URL invalide",
-		"title": "Paramètres de l'application"
-	},
-	"donate": {
-		"title": "Donate",
-		"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
-	}
+  "settings": {
+	"customUrl": "URL d'animateur de marché personnalisée",
+	"exampleUrl": "Exemple : {{url}}",
+	"invalidUrl": "URL invalide",
+	"title": "Paramètres de l'application"
+  },
+  "donate": {
+	"title": "Donate",
+	"bodyText": "HyperDEX is a free and open source project. You can help support its development by donating to the below addresses."
+  }
 }

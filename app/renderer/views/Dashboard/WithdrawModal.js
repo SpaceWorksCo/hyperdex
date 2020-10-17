@@ -181,7 +181,8 @@ class WithdrawModal extends React.Component {
 						<div className="section">
 							<div className="info">
 								<span>{t('withdraw.remainingBalance')}:</span>
-								<span className={remainingBalance < 0 ? 'negative-balance' : ''}>{remainingBalance} {currencyInfo.symbol}</span>
+								<span
+									className={remainingBalance < 0 ? 'negative-balance' : ''}>{remainingBalance} {currencyInfo.symbol}</span>
 							</div>
 							<div className={`info ${this.state.txHex || 'hidden'}`}>
 								<span>{t('withdraw.networkFee')}:</span>

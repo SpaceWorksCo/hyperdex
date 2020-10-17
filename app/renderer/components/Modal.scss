@@ -1,201 +1,201 @@
 @keyframes Modal-fade-open {
-	from {
-		opacity: 0;
-	}
+  from {
+	opacity: 0;
+  }
 }
 
 .Modal-fade-open {
-	animation: Modal-fade-open both ease-in;
+  animation: Modal-fade-open both ease-in;
 }
 
 @keyframes Modal-fade-close {
-	to {
-		opacity: 0;
-	}
+  to {
+	opacity: 0;
+  }
 }
 
 .Modal-fade-close {
-	animation: Modal-fade-close both ease-out;
+  animation: Modal-fade-close both ease-out;
 }
 
 
 @keyframes Modal-slide-up-open {
-	from {
-		transform: translate3d(0, 100px, 0);
-	}
+  from {
+	transform: translate3d(0, 100px, 0);
+  }
 }
 
 .Modal-slide-up-open {
-	animation: Modal-slide-up-open both cubic-bezier(0.4, 0, 0, 1.6);
+  animation: Modal-slide-up-open both cubic-bezier(0.4, 0, 0, 1.6);
 }
 
 @keyframes Modal-slide-up-close {
-	to {
-		transform: translate3d(0, 100px, 0);
-	}
+  to {
+	transform: translate3d(0, 100px, 0);
+  }
 }
 
 .Modal-slide-up-close {
-	animation: Modal-slide-up-close both;
+  animation: Modal-slide-up-close both;
 }
 
 
 @keyframes Modal-slide-down-open {
-	from {
-		transform: translate3d(0, -100px, 0);
-	}
+  from {
+	transform: translate3d(0, -100px, 0);
+  }
 }
 
 .Modal-slide-down-open {
-	animation: Modal-slide-down-open both cubic-bezier(0.4, 0, 0, 1.6);
+  animation: Modal-slide-down-open both cubic-bezier(0.4, 0, 0, 1.6);
 }
 
 @keyframes Modal-slide-down-close {
-	to {
-		transform: translate3d(0, -100px, 0);
-	}
+  to {
+	transform: translate3d(0, -100px, 0);
+  }
 }
 
 .Modal-slide-down-close {
-	animation: Modal-slide-down-close both;
+  animation: Modal-slide-down-close both;
 }
 
 
 @keyframes Modal-zoom-open {
-	from {
-		transform: scale3d(0.3, 0.3, 0.3);
-	}
+  from {
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
 }
 
 .Modal-zoom-open {
-	animation: Modal-zoom-open both cubic-bezier(0.4, 0, 0, 1.6);
+  animation: Modal-zoom-open both cubic-bezier(0.4, 0, 0, 1.6);
 }
 
 @keyframes Modal-zoom-close {
-	to {
-		transform: scale3d(0.3, 0.3, 0.3);
-	}
+  to {
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
 }
 
 .Modal-zoom-close {
-	animation: Modal-zoom-close both;
+  animation: Modal-zoom-close both;
 }
 
 
 .Modal {
-	contain: strict;
-	position: fixed;
+  contain: strict;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+
+  &__mask {
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+  }
+
+  &__dialog {
 	display: flex;
-	z-index: 1000;
-	align-items: center;
-	justify-content: center;
-	backdrop-filter: blur(3px);
+	flex-direction: column;
+	width: 400px;
+	max-height: 90vh;
+	margin-bottom: 20px;
+	z-index: 1001;
+	border-radius: 3px;
+	box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+	background-color: var(--widget-background-color);
+	text-align: left;
 
-	&__mask {
+	header {
+	  display: flex;
+	  align-items: center;
+	  position: relative;
+	  padding: 22px 32px;
+	  border-bottom: 1px solid var(--section-border-color);
+
+	  .Modal__icon {
+		display: block;
+		margin-right: 10px;
+	  }
+
+	  h1 {
+		width: 100%;
+		font-size: 17px;
+		margin: 0;
+		margin-right: 30px;
+		padding: 0;
+		line-height: 1;
+	  }
+	}
+
+	main {
+	  display: flex;
+	  flex-direction: column;
+	  margin: 30px;
+
+	  p {
+		font-size: 15px;
+		word-break: normal;
+	  }
+	}
+  }
+
+  &__dialog:focus {
+	outline: none;
+  }
+
+  &__close {
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 38px;
+	height: 40px;
+	padding: 10px;
+
+	&__icon {
+	  position: relative;
+	  top: 50%;
+	  transform: translateY(-50%);
+
+	  &::before,
+	  &::after {
 		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background: rgba(0, 0, 0, 0.4);
-	}
-
-	&__dialog {
-		display: flex;
-		flex-direction: column;
-		width: 400px;
-		max-height: 90vh;
-		margin-bottom: 20px;
-		z-index: 1001;
-		border-radius: 3px;
-		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
-		background-color: var(--widget-background-color);
-		text-align: left;
-
-		header {
-			display: flex;
-			align-items: center;
-			position: relative;
-			padding: 22px 32px;
-			border-bottom: 1px solid var(--section-border-color);
-
-			.Modal__icon {
-				display: block;
-				margin-right: 10px;
-			}
-
-			h1 {
-				width: 100%;
-				font-size: 17px;
-				margin: 0;
-				margin-right: 30px;
-				padding: 0;
-				line-height: 1;
-			}
-		}
-
-		main {
-			display: flex;
-			flex-direction: column;
-			margin: 30px;
-
-			p {
-				font-size: 15px;
-				word-break: normal;
-			}
-		}
-	}
-
-	&__dialog:focus {
-		outline: none;
-	}
-
-	&__close {
-		position: absolute;
-		right: 18px;
+		content: '';
+		width: 100%;
+		height: 2px;
 		top: 50%;
-		transform: translateY(-50%);
-		width: 38px;
-		height: 40px;
-		padding: 10px;
+		left: 0;
+		margin-top: -1px;
+		background: var(--modal-close-button-color);
+		transition: background 0.2s;
+		border-radius: 50%;
+	  }
 
-		&__icon {
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
+	  &::before {
+		transform: rotate(45deg);
+	  }
 
-			&::before,
-			&::after {
-				position: absolute;
-				content: '';
-				width: 100%;
-				height: 2px;
-				top: 50%;
-				left: 0;
-				margin-top: -1px;
-				background: var(--modal-close-button-color);
-				transition: background 0.2s;
-				border-radius: 50%;
-			}
-
-			&::before {
-				transform: rotate(45deg);
-			}
-
-			&::after {
-				transform: rotate(-45deg);
-			}
-		}
-
-		&:hover {
-			.Modal__close__icon::before,
-			.Modal__close__icon::after {
-				background: var(--text-color-faded);
-			}
-		}
+	  &::after {
+		transform: rotate(-45deg);
+	  }
 	}
+
+	&:hover {
+	  .Modal__close__icon::before,
+	  .Modal__close__icon::after {
+		background: var(--text-color-faded);
+	  }
+	}
+  }
 }

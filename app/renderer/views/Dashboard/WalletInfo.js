@@ -25,7 +25,8 @@ const WalletInfo = () => {
 						(
 							<div className={`price-change ${priceChangeClass}`}>
 								<span className="arrow"/>
-								<span className="percentage">{Math.abs(activeCurrency.cmcPercentChange24h)}% (24h)</span>
+								<span
+									className="percentage">{Math.abs(activeCurrency.cmcPercentChange24h)}% (24h)</span>
 							</div>
 						) :
 						null

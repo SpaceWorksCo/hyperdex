@@ -1,7 +1,7 @@
 {
-	"dashboard": "Pannello di controllo",
-	"exchange": "Mercato",
-	"settings": "Impostazioni",
-	"swap": "Scambio",
-	"trades": "Operazioni"
+  "dashboard": "Pannello di controllo",
+  "exchange": "Mercato",
+  "settings": "Impostazioni",
+  "swap": "Scambio",
+  "trades": "Operazioni"
 }

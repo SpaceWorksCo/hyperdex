@@ -1,17 +1,17 @@
 @import './Input';
 
 .TextArea {
-	textarea {
-		min-width: 245px;
-		min-height: 72px;
-		padding: 7px 10px;
-		overflow: auto;
-		resize: none;
-		font-weight: 600;
-		line-height: 19px;
-	}
+  textarea {
+	min-width: 245px;
+	min-height: 72px;
+	padding: 7px 10px;
+	overflow: auto;
+	resize: none;
+	font-weight: 600;
+	line-height: 19px;
+  }
 
-	textarea::placeholder {
-		font-weight: normal;
-	}
+  textarea::placeholder {
+	font-weight: normal;
+  }
 }

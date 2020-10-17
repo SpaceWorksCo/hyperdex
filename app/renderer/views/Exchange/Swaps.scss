@@ -1,35 +1,35 @@
 .Exchange--Swaps,
 .Trades {
+  display: flex;
+  flex-direction: column;
+
+  header {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 20px;
+	border-bottom: 1px solid var(--section-border-color);
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-		padding: 0 20px;
-		border-bottom: 1px solid var(--section-border-color);
-
-		h3,
-		nav span {
-			padding: 16px 0;
-		}
-
-		h3 {
-			margin: 0;
-		}
+	h3,
+	nav span {
+	  padding: 16px 0;
 	}
 
-	main {
-		display: flex;
-		flex: 1;
+	h3 {
+	  margin: 0;
 	}
+  }
 
-	.history-button {
-		align-self: center;
-		margin-left: 10px;
-		font-size: 12px;
-		cursor: default;
-	}
+  main {
+	display: flex;
+	flex: 1;
+  }
+
+  .history-button {
+	align-self: center;
+	margin-left: 10px;
+	font-size: 12px;
+	cursor: default;
+  }
 }

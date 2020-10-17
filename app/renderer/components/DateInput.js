@@ -21,7 +21,8 @@ WrappedInput.propTypes = {
 };
 
 WrappedInput.defaultProps = {
-	onChange: () => {},
+	onChange: () => {
+	},
 };
 
 class DateInput extends React.Component {
@@ -41,8 +42,10 @@ class DateInput extends React.Component {
 	static defaultProps = {
 		forwardedRef: undefined,
 		autoCorrect: false,
-		onDayChange: () => {},
-		onBlur: () => {},
+		onDayChange: () => {
+		},
+		onBlur: () => {
+		},
 		inputProps: undefined,
 	};
 

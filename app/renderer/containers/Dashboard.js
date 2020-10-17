@@ -45,25 +45,6 @@ class DashboardContainer extends SuperContainer {
 		});
 	}
 
-	setActiveView = async activeView => {
-		await this.setState({activeView});
-		this.updateCurrencyHistory();
-	};
-
-	setCurrencyHistoryResolution = async currencyHistoryResolution => {
-		await this.setState({currencyHistoryResolution});
-
-		if (this.state.activeView === 'Portfolio') {
-			this.updateAllCurrencyHistory();
-		} else {
-			this.updateCurrencyHistory();
-		}
-	};
-
-	setListSearchQuery = listSearchQuery => {
-		this.setState({listSearchQuery});
-	};
-
 	get assetCount() {
 		const {length} = appContainer.state.currencies;
 		return `${length} ${t('info.assets', {count: length})}`;
@@ -84,6 +65,25 @@ class DashboardContainer extends SuperContainer {
 	get activeCurrency() {
 		return appContainer.getCurrency(this.state.activeView);
 	}
+
+	setActiveView = async activeView => {
+		await this.setState({activeView});
+		this.updateCurrencyHistory();
+	};
+
+	setCurrencyHistoryResolution = async currencyHistoryResolution => {
+		await this.setState({currencyHistoryResolution});
+
+		if (this.state.activeView === 'Portfolio') {
+			this.updateAllCurrencyHistory();
+		} else {
+			this.updateCurrencyHistory();
+		}
+	};
+
+	setListSearchQuery = listSearchQuery => {
+		this.setState({listSearchQuery});
+	};
 
 	_currencyHistoryUrl(symbol) {
 		const baseUrl = 'https://min-api.cryptocompare.com/data/';

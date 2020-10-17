@@ -48,7 +48,8 @@ class Marketmaker {
 					}
 				});
 
-				request.on('error', () => {});
+				request.on('error', () => {
+				});
 
 				request.end(JSON.stringify({method: 'help'}));
 			}, 100);
@@ -67,7 +68,8 @@ class Marketmaker {
 			} else {
 				await execFile('killall', ['-9', 'marketmaker']);
 			}
-		} catch (_) {}
+		} catch (_) {
+		}
 	}
 
 	async start(options) {

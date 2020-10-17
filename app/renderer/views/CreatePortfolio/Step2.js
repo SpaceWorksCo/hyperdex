@@ -31,7 +31,9 @@ const CreatePortfolioStep2 = () => {
 					<div className="content">
 						<h3>{t('create.securityTitle')}</h3>
 						<Trans i18n={instance} i18nKey="create.securityDescription" t={t}>
-							<p>We recommend storing it offline. <ExternalLink url="https://github.com/atomiclabs/hyperdex/wiki/Security-Best-Practices">Learn more security best practices</ExternalLink></p>
+							<p>We recommend storing it offline. <ExternalLink
+								url="https://github.com/atomiclabs/hyperdex/wiki/Security-Best-Practices">Learn more
+								security best practices</ExternalLink></p>
 						</Trans>
 					</div>
 				</div>

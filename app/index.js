@@ -39,7 +39,8 @@ contextMenu();
 
 try {
 	require('electron-reloader')(module, {watchRenderer: false});
-} catch (_) {}
+} catch (_) {
+}
 
 const {app, session} = electron;
 

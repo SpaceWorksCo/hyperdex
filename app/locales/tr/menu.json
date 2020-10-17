@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Tercihler…"
-	},
-	"help": {
-		"debugMode": "Hata ayıklama modu",
-		"website": "Web sitesi",
-		"sourceCode": "Kaynak kodu",
-		"reportSecurityIssue": "Güvenlik sorunlarını raporla…",
-		"reportIssue": "Sorun bildir…",
-		"about": "{{appName}} Hakkında"
-	},
-	"other": {
-		"file": "Dosya"
-	},
-	"portfolio": {
-		"title": "Portföy",
-		"dashboard": "Kontrol paneli",
-		"swap": "Takas Et",
-		"exchange": "Bozdur",
-		"trades": "Alım satım",
-		"settings": "Ayarlar",
-		"goToPrevView": "Bir Önceki Ekrana Git",
-		"goToNextView": "Bir Sonraki Ekrana Git",
-		"logOut": "Çıkış Yap"
-	}
+  "app": {
+	"preferences": "Tercihler…"
+  },
+  "help": {
+	"debugMode": "Hata ayıklama modu",
+	"website": "Web sitesi",
+	"sourceCode": "Kaynak kodu",
+	"reportSecurityIssue": "Güvenlik sorunlarını raporla…",
+	"reportIssue": "Sorun bildir…",
+	"about": "{{appName}} Hakkında"
+  },
+  "other": {
+	"file": "Dosya"
+  },
+  "portfolio": {
+	"title": "Portföy",
+	"dashboard": "Kontrol paneli",
+	"swap": "Takas Et",
+	"exchange": "Bozdur",
+	"trades": "Alım satım",
+	"settings": "Ayarlar",
+	"goToPrevView": "Bir Önceki Ekrana Git",
+	"goToNextView": "Bir Sonraki Ekrana Git",
+	"logOut": "Çıkış Yap"
+  }
 }

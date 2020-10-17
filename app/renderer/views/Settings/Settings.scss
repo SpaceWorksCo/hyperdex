@@ -1,97 +1,97 @@
 .Settings,
 .AppSettings {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: var(--widget-background-color);
+
+  header {
+	display: flex;
+	align-items: center;
+	padding: 16px 30px;
+	border-bottom: 1px solid var(--section-border-color);
+
+	h2 {
+	  margin: 0;
+	  font-size: 18px;
+	}
+  }
+
+  main {
 	display: flex;
 	flex-direction: column;
-	border-radius: 4px;
-	background-color: var(--widget-background-color);
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 30px;
 
-	header {
-		display: flex;
-		align-items: center;
-		padding: 16px 30px;
-		border-bottom: 1px solid var(--section-border-color);
-
-		h2 {
-			margin: 0;
-			font-size: 18px;
-		}
+	h3 {
+	  padding: 0 0 8px;
+	  margin-bottom: 20px;
+	  border-bottom: 1px solid var(--section-border-color);
 	}
 
-	main {
-		display: flex;
-		flex-direction: column;
-		overflow-x: hidden;
-		overflow-y: auto;
-		padding: 30px;
-
-		h3 {
-			padding: 0 0 8px;
-			margin-bottom: 20px;
-			border-bottom: 1px solid var(--section-border-color);
-		}
-
-		.form-group {
-			margin-bottom: 30px;
-		}
-
-		label {
-			display: block;
-			font-weight: 600;
-			margin-bottom: 5px;
-			color: var(--text-color);
-			line-height: 1.5;
-		}
-
-		.modal-wrapper {
-			display: inline-flex;
-			margin-right: 10px;
-			margin-top: 5px;
-			margin-bottom: 5px;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
+	.form-group {
+	  margin-bottom: 30px;
 	}
+
+	label {
+	  display: block;
+	  font-weight: 600;
+	  margin-bottom: 5px;
+	  color: var(--text-color);
+	  line-height: 1.5;
+	}
+
+	.modal-wrapper {
+	  display: inline-flex;
+	  margin-right: 10px;
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+
+	  &:last-child {
+		margin-right: 0;
+	  }
+	}
+  }
 }
 
 .Settings {
-	width: 660px;
-	height: 100%;
-	margin: 0 auto;
+  width: 660px;
+  height: 100%;
+  margin: 0 auto;
 
-	main {
-		.enabled-currencies {
-			--dropdown-max-height: 170px;
-			margin: 5px 0;
+  main {
+	.enabled-currencies {
+	  --dropdown-max-height: 170px;
+	  margin: 5px 0;
 
-			.SelectOption__label {
-				font-size: 14px;
-				line-height: 1.3;
-			}
-		}
+	  .SelectOption__label {
+		font-size: 14px;
+		line-height: 1.3;
+	  }
 	}
+  }
 }
 
 .AppSettings {
-	margin: 70px 50px;
+  margin: 70px 50px;
 
-	.window-draggable-area {
-		width: 100%;
-		height: 50px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		-webkit-app-region: drag;
+  .window-draggable-area {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-app-region: drag;
+  }
+
+  header {
+	position: relative;
+
+	h2 {
+	  text-align: center;
+	  display: inline-block;
+	  margin: 0 auto;
 	}
-
-	header {
-		position: relative;
-
-		h2 {
-			text-align: center;
-			display: inline-block;
-			margin: 0 auto;
-		}
-	}
+  }
 }

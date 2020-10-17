@@ -22,7 +22,8 @@ class Checkbox extends React.Component {
 		className: '',
 		checked: false,
 		disabled: false,
-		onChange: () => {},
+		onChange: () => {
+		},
 	};
 
 	state = {
@@ -70,7 +71,9 @@ class Checkbox extends React.Component {
 					/>
 					<span className="Checkbox__bullet">
 						{this.state.checked &&
-							<svg className="checkmark-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="currentColor" d="M4.5 8.09L2.42 6l-.71.7L4.5 9.5l6-6-.7-.7z"/></svg>
+						<svg className="checkmark-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+							<path fill="currentColor" d="M4.5 8.09L2.42 6l-.71.7L4.5 9.5l6-6-.7-.7z"/>
+						</svg>
 						}
 					</span>
 					<span className="Checkbox__label">{label}</span>

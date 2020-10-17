@@ -106,26 +106,26 @@ const List = () => {
 				))()}
 			</div>
 			{currencies.length > 5 &&
-				<div className="bottom">
-					<Input
-						placeholder={t('list.search')}
-						value={state.listSearchQuery}
-						view={() => (
-							<img src="/assets/search-icon.svg" width="12" height="12"/>
-						)}
-						onChange={dashboardContainer.setListSearchQuery}
-						onBlur={() => {
-							if (filteredCurrencies.length === 0) {
-								dashboardContainer.setListSearchQuery('');
-							}
-						}}
-						onKeyDown={event => {
-							if (event.key === 'Escape') {
-								dashboardContainer.setListSearchQuery('');
-							}
-						}}
-					/>
-				</div>
+			<div className="bottom">
+				<Input
+					placeholder={t('list.search')}
+					value={state.listSearchQuery}
+					view={() => (
+						<img src="/assets/search-icon.svg" width="12" height="12"/>
+					)}
+					onChange={dashboardContainer.setListSearchQuery}
+					onBlur={() => {
+						if (filteredCurrencies.length === 0) {
+							dashboardContainer.setListSearchQuery('');
+						}
+					}}
+					onKeyDown={event => {
+						if (event.key === 'Escape') {
+							dashboardContainer.setListSearchQuery('');
+						}
+					}}
+				/>
+			</div>
 			}
 		</div>
 	);

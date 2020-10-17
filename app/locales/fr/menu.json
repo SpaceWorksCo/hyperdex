@@ -1,27 +1,27 @@
 {
-	"app": {
-		"preferences": "Préférences…"
-	},
-	"help": {
-		"debugMode": "Debug Mode",
-		"website": "Site internet",
-		"sourceCode": "Code source",
-		"reportSecurityIssue": "Report a Security Issue…",
-		"reportIssue": "Signaler un problème…",
-		"about": "À propos de {{appName}}"
-	},
-	"other": {
-		"file": "Fichier"
-	},
-	"portfolio": {
-		"title": "Portefeuille",
-		"dashboard": "Tableau de bord",
-		"swap": "Échanger",
-		"exchange": "Bourse",
-		"trades": "Transactions",
-		"settings": "Réglages",
-		"goToPrevView": "Aller à la page précédente",
-		"goToNextView": "Aller à la page suivante",
-		"logOut": "Déconnexion"
-	}
+  "app": {
+	"preferences": "Préférences…"
+  },
+  "help": {
+	"debugMode": "Debug Mode",
+	"website": "Site internet",
+	"sourceCode": "Code source",
+	"reportSecurityIssue": "Report a Security Issue…",
+	"reportIssue": "Signaler un problème…",
+	"about": "À propos de {{appName}}"
+  },
+  "other": {
+	"file": "Fichier"
+  },
+  "portfolio": {
+	"title": "Portefeuille",
+	"dashboard": "Tableau de bord",
+	"swap": "Échanger",
+	"exchange": "Bourse",
+	"trades": "Transactions",
+	"settings": "Réglages",
+	"goToPrevView": "Aller à la page précédente",
+	"goToNextView": "Aller à la page suivante",
+	"logOut": "Déconnexion"
+  }
 }

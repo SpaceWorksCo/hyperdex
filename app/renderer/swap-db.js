@@ -5,7 +5,7 @@ import cryptoPouch from 'crypto-pouch';
 import Emittery from 'emittery';
 import PQueue from 'p-queue';
 import roundTo from 'round-to';
-import {subDays, isAfter} from 'date-fns';
+import {isAfter, subDays} from 'date-fns';
 import appContainer from 'containers/App';
 import {appTimeStarted} from '../constants';
 import {translate} from './translate';
@@ -71,7 +71,7 @@ class SwapDB {
 
 	insertSwapData(swap, requestOpts) {
 		return this.queue(() => this.db.post({
-			uuid: swap.uuid,
+			uuid: swap.uuid || 0,
 			timeStarted: Date.now(),
 			request: requestOpts,
 			response: swap,

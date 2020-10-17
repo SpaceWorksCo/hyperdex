@@ -1,13 +1,13 @@
 import EventEmitter from 'events';
 import electron, {remote} from 'electron';
-import {is, api, darkMode, activeWindow} from 'electron-util';
+import {darkMode, is} from 'electron-util';
 import ipc from 'electron-better-ipc';
 import _ from 'lodash';
 import Cycled from 'cycled';
 import roundTo from 'round-to';
 import SuperContainer from 'containers/SuperContainer';
 /// import {isPast, addHours} from 'date-fns';
-import {appViews, alwaysEnabledCurrencies, hiddenCurrencies} from '../../constants';
+import {alwaysEnabledCurrencies, appViews, hiddenCurrencies} from '../../constants';
 import {getCurrencyName} from '../../marketmaker/supported-currencies';
 import fireEvery from '../fire-every';
 import {formatCurrency, setLoginWindowBounds} from '../util';
@@ -42,6 +42,20 @@ class AppContainer extends SuperContainer {
 		darkMode.onChange(() => {
 			this.setTheme(this.state.theme);
 		});
+	}
+
+	get isDarkTheme() {
+		const {theme} = this.state;
+
+		if (theme === 'system' && is.macos) {
+			return darkMode.isEnabled;
+		}
+
+		return theme === 'dark';
+	}
+
+	get isLoggedIn() {
+		return Boolean(this.state.portfolio);
 	}
 
 	initSwapHistoryListener() {
@@ -131,16 +145,6 @@ class AppContainer extends SuperContainer {
 		this.setState({theme});
 	}
 
-	get isDarkTheme() {
-		const {theme} = this.state;
-
-		if (theme === 'system' && is.macos) {
-			return darkMode.isEnabled;
-		}
-
-		return theme === 'dark';
-	}
-
 	logIn(portfolio) {
 		this.setState({
 			activeView: 'Dashboard',
@@ -148,10 +152,6 @@ class AppContainer extends SuperContainer {
 		});
 
 		this.initSwapHistoryListener();
-	}
-
-	get isLoggedIn() {
-		return Boolean(this.state.portfolio);
 	}
 
 	getSeedPhrase(password) {

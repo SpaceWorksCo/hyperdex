@@ -1,136 +1,136 @@
 .Wallet--Activity {
-	display: flex;
+  display: flex;
+  flex: 1;
+  padding: 10px 20px;
+
+  .ActivityList {
 	flex: 1;
-	padding: 10px 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-bottom: 20px;
+	font-size: 12px;
+	height: 0;
+	min-height: 100%;
+	padding: 0 20px;
 
-	.ActivityList {
-		flex: 1;
-		overflow-x: hidden;
-		overflow-y: auto;
-		margin-bottom: 20px;
-		font-size: 12px;
-		height: 0;
-		min-height: 100%;
-		padding: 0 20px;
+	table {
+	  display: table;
+	  width: 100%;
 
-		table {
-			display: table;
-			width: 100%;
-
-			// Fixes weirdness in how the table cells are horizontally aligned
-			td:nth-child(2) {
-				padding-left: 14px;
-			}
-		}
-
-		tr {
-			white-space: nowrap;
-			border-bottom: 1px solid var(--section-border-color);
-
-			&:last-child {
-				border: none;
-			}
-		}
-
-		td {
-			vertical-align: middle;
-			padding: 18px 22px 18px 0;
-			text-align: left;
-
-			> div {
-				display: inline-flex;
-				flex-direction: column;
-			}
-		}
-
-		td:last-child {
-			padding-right: 0;
-			text-align: right;
-		}
-
-		.timestamp {
-			> div {
-				font-size: 14px;
-				color: var(--text-color);
-
-				> div:first-child {
-					margin-bottom: 2px;
-				}
-			}
-		}
-
-		.value {
-			&-description {
-				color: var(--text-color);
-			}
-		}
-
-		.value,
-		.type {
-			&-title {
-				font-size: 16px;
-				font-weight: 600;
-				margin-bottom: 2px;
-			}
-		}
-
-		.status {
-			&__icon {
-				width: 60px;
-				padding: 1px 2px;
-				font-size: 10px;
-				text-align: center;
-				text-transform: uppercase;
-				border: 1px solid;
-				border-radius: 3px;
-				user-select: none;
-				cursor: default;
-			}
-
-			&__icon[data-status='failed'] {
-				color: var(--text-color-faded);
-				border-color: var(--swap-status-border-color);
-			}
-
-			&__icon[data-status='completed'] {
-				border-color: var(--primary-color);
-			}
-		}
-
-		// TODO: Deduplicate this with the CSS in `SwapList.css`
-		.view {
-			&__button {
-				padding: 2px 4px;
-				color: var(--text-color2);
-				background-color: var(--background-color);
-				border: 1px solid var(--border-color);
-				transition: 0.2s ease-out;
-				font-size: 11px;
-
-				&:hover {
-					border-color: rgba(255, 255, 255, 0.2);
-
-					[data-theme='light'] & {
-						border-color: rgba(0, 0, 0, 0.5);
-					}
-				}
-
-				&:active {
-					color: rgba(255, 255, 255, 0.8);
-					border-color: rgba(255, 255, 255, 0.15);
-				}
-
-				&[disabled] {
-					user-select: none;
-					cursor: default;
-					color: var(--text-color);
-					opacity: 0.8;
-
-					&:hover {
-						border: 1px solid var(--border-color);
-					}
-				}
-			}
-		}
+	  // Fixes weirdness in how the table cells are horizontally aligned
+	  td:nth-child(2) {
+		padding-left: 14px;
+	  }
 	}
+
+	tr {
+	  white-space: nowrap;
+	  border-bottom: 1px solid var(--section-border-color);
+
+	  &:last-child {
+		border: none;
+	  }
+	}
+
+	td {
+	  vertical-align: middle;
+	  padding: 18px 22px 18px 0;
+	  text-align: left;
+
+	  > div {
+		display: inline-flex;
+		flex-direction: column;
+	  }
+	}
+
+	td:last-child {
+	  padding-right: 0;
+	  text-align: right;
+	}
+
+	.timestamp {
+	  > div {
+		font-size: 14px;
+		color: var(--text-color);
+
+		> div:first-child {
+		  margin-bottom: 2px;
+		}
+	  }
+	}
+
+	.value {
+	  &-description {
+		color: var(--text-color);
+	  }
+	}
+
+	.value,
+	.type {
+	  &-title {
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 2px;
+	  }
+	}
+
+	.status {
+	  &__icon {
+		width: 60px;
+		padding: 1px 2px;
+		font-size: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		border: 1px solid;
+		border-radius: 3px;
+		user-select: none;
+		cursor: default;
+	  }
+
+	  &__icon[data-status='failed'] {
+		color: var(--text-color-faded);
+		border-color: var(--swap-status-border-color);
+	  }
+
+	  &__icon[data-status='completed'] {
+		border-color: var(--primary-color);
+	  }
+	}
+
+	// TODO: Deduplicate this with the CSS in `SwapList.css`
+	.view {
+	  &__button {
+		padding: 2px 4px;
+		color: var(--text-color2);
+		background-color: var(--background-color);
+		border: 1px solid var(--border-color);
+		transition: 0.2s ease-out;
+		font-size: 11px;
+
+		&:hover {
+		  border-color: rgba(255, 255, 255, 0.2);
+
+		  [data-theme='light'] & {
+			border-color: rgba(0, 0, 0, 0.5);
+		  }
+		}
+
+		&:active {
+		  color: rgba(255, 255, 255, 0.8);
+		  border-color: rgba(255, 255, 255, 0.15);
+		}
+
+		&[disabled] {
+		  user-select: none;
+		  cursor: default;
+		  color: var(--text-color);
+		  opacity: 0.8;
+
+		  &:hover {
+			border: 1px solid var(--border-color);
+		  }
+		}
+	  }
+	}
+  }
 }

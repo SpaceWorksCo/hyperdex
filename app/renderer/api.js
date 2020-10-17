@@ -153,7 +153,7 @@ export default class Api {
 		}
 	}
 
-  // Mm v2
+	// Mm v2
 	async disableCurrency(symbol) {
 		ow(symbol, 'symbol', symbolPredicate);
 
@@ -185,14 +185,12 @@ export default class Api {
 				zCredits: order.zcredits,
 			}));
 
-		const formattedResponse = {
+		return {
 			baseCurrency: response.base,
 			quoteCurrency: response.rel,
 			asks: formatOrders(response.asks),
 			bids: formatOrders(response.bids),
 		};
-
-		return formattedResponse;
 	}
 
 	// Mm v2
@@ -214,12 +212,13 @@ export default class Api {
 			volume: options.volume,
 		});
 
-		result.baseAmount = Number(result.base_amount);
-		delete result.base_amount;
+		if (result !== undefined) {
+			result.baseAmount = Number(result.base_amount);
+			delete result.base_amount;
 
-		result.quoteAmount = Number(result.rel_amount);
-		delete result.rel_amount;
-
+			result.quoteAmount = Number(result.rel_amount);
+			delete result.rel_amount;
+		}
 		return result;
 	}
 

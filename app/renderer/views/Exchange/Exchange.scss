@@ -2,48 +2,48 @@
 @import '../../styles/variables';
 
 .Exchange {
-	--text-size: 13px;
-	--header-text-size: 18px;
-	display: grid;
-	grid-template-areas:
+  --text-size: 13px;
+  --header-text-size: 18px;
+  display: grid;
+  grid-template-areas:
 		'buy chart sell'
 		'buy swaps sell';
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 280px 1fr 280px;
-	grid-gap: 20px;
-	height: 100%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 280px 1fr 280px;
+  grid-gap: 20px;
+  height: 100%;
 
-	h3 {
-		font-size: var(--header-text-size);
-		font-weight: 500;
-	}
+  h3 {
+	font-size: var(--header-text-size);
+	font-weight: 500;
+  }
 
-	&--Buy {
-		grid-area: buy;
-	}
+  &--Buy {
+	grid-area: buy;
+  }
 
-	&--Sell {
-		grid-area: sell;
-	}
+  &--Sell {
+	grid-area: sell;
+  }
 
-	&--Chart {
-		grid-area: chart;
-	}
+  &--Chart {
+	grid-area: chart;
+  }
 
-	&--Swaps {
-		grid-area: swaps;
-	}
+  &--Swaps {
+	grid-area: swaps;
+  }
 
-	&--Buy,
-	&--Sell,
-	&--Chart,
-	&--Swaps {
-		display: flex;
-		background-color: var(--widget-background-color);
-		border-radius: 4px;
-	}
+  &--Buy,
+  &--Sell,
+  &--Chart,
+  &--Swaps {
+	display: flex;
+	background-color: var(--widget-background-color);
+	border-radius: 4px;
+  }
 
-	@media (min-width: 1400px) {
-		grid-template-columns: 320px 1fr 320px;
-	}
+  @media (min-width: 1400px) {
+	grid-template-columns: 320px 1fr 320px;
+  }
 }

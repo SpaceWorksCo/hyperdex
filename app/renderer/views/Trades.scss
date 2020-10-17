@@ -1,97 +1,97 @@
 @import '../styles/variables';
 
 .Trades {
+  display: flex;
+  height: 100%;
+  background-color: var(--widget-background-color);
+  border-radius: 4px;
+
+  header nav .TabButton {
+	padding-bottom: 19px;
+	font-size: 17px;
+  }
+
+  header {
+	padding: 20px;
+	position: relative;
+
+	.stats {
+	  position: absolute;
+	  top: 0;
+	  right: 20px;
+	  @include center-vertically;
+
+	  p {
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	  }
+	}
+  }
+
+  main {
 	display: flex;
-	height: 100%;
-	background-color: var(--widget-background-color);
-	border-radius: 4px;
+	flex-direction: column;
 
-	header nav .TabButton {
-		padding-bottom: 19px;
-		font-size: 17px;
+	.SwapFilters {
+	  padding: 15px 20px;
+	  background-color: var(--filter-background-color);
+	  border-bottom: 1px solid var(--section-border-color);
 	}
 
-	header {
-		padding: 20px;
-		position: relative;
+	.SwapList {
+	  .row {
+		padding: 12px 25px 12px 20px;
+		font-size: 14px;
+	  }
 
-		.stats {
-			position: absolute;
-			top: 0;
-			right: 20px;
-			@include center-vertically;
+	  .header {
+		padding-top: 0;
+		padding-bottom: 0;
 
-			p {
-				font-size: 12px;
-				margin: 0;
-				padding: 0;
-			}
+		> * {
+		  padding: 12px 0;
 		}
+	  }
+
+	  .view,
+	  .cancel {
+		&__button {
+		  padding: 4px 8px;
+		  border-radius: 3px;
+		}
+	  }
+
+	  // TODO: When Electron supports the `env()` feature, we can deduplicate this with `SwapList.scss`
+	  // https://stackoverflow.com/a/47212942/64949
+	  @media (min-width: 0) {
+		.row {
+		  grid-template-areas: 'timestamp pairs base-amount quote-amount status buttons';
+		  grid-template-columns: 16% 14% 23% 20%;
+		  justify-content: unset;
+		  white-space: unset;
+
+		  .pairs {
+			display: block;
+		  }
+
+		  .base-amount {
+			justify-self: start;
+		  }
+
+		  .quote-amount {
+			justify-self: start;
+		  }
+
+		  .status {
+			justify-self: start;
+		  }
+
+		  .buttons {
+			justify-self: end;
+		  }
+		}
+	  }
 	}
-
-	main {
-		display: flex;
-		flex-direction: column;
-
-		.SwapFilters {
-			padding: 15px 20px;
-			background-color: var(--filter-background-color);
-			border-bottom: 1px solid var(--section-border-color);
-		}
-
-		.SwapList {
-			.row {
-				padding: 12px 25px 12px 20px;
-				font-size: 14px;
-			}
-
-			.header {
-				padding-top: 0;
-				padding-bottom: 0;
-
-				> * {
-					padding: 12px 0;
-				}
-			}
-
-			.view,
-			.cancel {
-				&__button {
-					padding: 4px 8px;
-					border-radius: 3px;
-				}
-			}
-
-			// TODO: When Electron supports the `env()` feature, we can deduplicate this with `SwapList.scss`
-			// https://stackoverflow.com/a/47212942/64949
-			@media (min-width: 0) {
-				.row {
-					grid-template-areas: 'timestamp pairs base-amount quote-amount status buttons';
-					grid-template-columns: 16% 14% 23% 20%;
-					justify-content: unset;
-					white-space: unset;
-
-					.pairs {
-						display: block;
-					}
-
-					.base-amount {
-						justify-self: start;
-					}
-
-					.quote-amount {
-						justify-self: start;
-					}
-
-					.status {
-						justify-self: start;
-					}
-
-					.buttons {
-						justify-self: end;
-					}
-				}
-			}
-		}
-	}
+  }
 }

@@ -813,6 +813,35 @@ const supportedCurrencies = [
 		],
 	},
 	{
+		coin: 'MGW',
+		name: 'MultiGateWay',
+		asset: 'MGW',
+		rpcport: 12386,
+		txversion: 4,
+		overwintered: 1,
+		mm2: 1,
+		required_confirmations: 2,
+		requires_notarization: 'true',
+		avg_blocktime: 1,
+		protocol: {
+			type: 'UTXO',
+		},
+		electrumServers: [
+			{
+				host: 'electrum1.cipig.net',
+				port: 10015,
+			},
+			{
+				host: 'electrum2.cipig.net',
+				port: 10015,
+			},
+			{
+				host: 'electrum3.cipig.net',
+				port: 10015,
+			},
+		],
+	},
+	{
 		coin: 'MKR',
 		name: 'Maker',
 		rpcport: 80,

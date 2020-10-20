@@ -19,7 +19,6 @@ const explorers = new Map(Object.entries({
 	EMC2: 'https://chainz.cryptoid.info/emc2/tx.dws?{txid}',
 	FTC: 'https://fsight.chain.tips/tx/{txid}',
 	HODL: 'https://hodl.explorer.dexstats.info/tx/{txid}',
-	HUSH: 'https://explorer.myhush.org/tx/{txid}',
 	JUMBLR: 'https://jumblr.explorer.dexstats.info/tx/{txid}',
 	KMD: 'https://kmdexplorer.io/tx/{txid}',
 	LABS: 'https://labs.explorer.dexstats.info/tx/{txid}',

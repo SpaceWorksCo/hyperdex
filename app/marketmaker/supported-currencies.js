@@ -583,35 +583,6 @@ const supportedCurrencies = [
 		],
 	},
 	{
-		coin: 'HUSH',
-		asset: 'HUSH3',
-		name: 'Hush',
-		rpcport: 18031,
-		txversion: 4,
-		overwintered: 1,
-		mm2: 1,
-		required_confirmations: 2,
-		requires_notarization: 'true',
-		avg_blocktime: 2.5,
-		protocol: {
-			type: 'UTXO',
-		},
-		electrumServers: [
-			{
-				host: 'electrum1.cipig.net',
-				port: 10064,
-			},
-			{
-				host: 'electrum2.cipig.net',
-				port: 10064,
-			},
-			{
-				host: 'electrum3.cipig.net',
-				port: 10064,
-			},
-		],
-	},
-	{
 		coin: 'JST',
 		name: 'JST (TESTCOIN)',
 		rpcport: 80,

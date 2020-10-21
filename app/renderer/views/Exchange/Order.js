@@ -64,17 +64,6 @@ const Center = props => {
 
 	const selectRow = row => {
 		let {price} = row;
-
-		// TODO: This should be fixed properly in mm or use more sensible logic here
-		// This is just a quick fix to increase match rate
-		const percentMoreExpensive = 5 / 100;
-		const pricePercentage = price * percentMoreExpensive;
-		if (props.type === 'buy') {
-			price += pricePercentage;
-		} else {
-			price -= pricePercentage;
-		}
-
 		return props.handlePriceChange(price);
 	};
 

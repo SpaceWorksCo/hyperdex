@@ -44,7 +44,7 @@ try {
 
 const {app, session} = electron;
 
-app.setAppUserModelId('com.lukechilds.hyperdex');
+app.setAppUserModelId('com.spaceworks.hyperdex');
 
 // TODO: Figure out why it throws at launch
 /// if (!is.development) {

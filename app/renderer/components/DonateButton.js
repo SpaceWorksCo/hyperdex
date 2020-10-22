@@ -8,8 +8,9 @@ import './DonateButton.scss';
 const t = translate('app');
 
 const donationAddresses = {
-	kmd: 'RHyper8TJyHK6uZ3AXzUwC2uVRdt7cfxEC',
-	btc: '1HyperDEXfMx459ZFh6Ram5uymS8AiRAQf',
+	space: 'RTUqKVvvxAbyMSKVnQBBL9j459UWspetJu',
+	btc: '1KCeEz3eMLoQHRxJKEC4EdPrJt1vFRDiUa',
+	kmd: 'RTUqKVvvxAbyMSKVnQBBL9j459UWspetJu',
 };
 
 class DonateButton extends React.Component {
@@ -40,12 +41,16 @@ class DonateButton extends React.Component {
 							<p>{t('donate.bodyText')}</p>
 						</div>
 						<div className="section">
-							<label>KMD:</label>
-							<CopyCurrencyAddress value={donationAddresses.kmd}/>
+							<label>SPACE:</label>
+							<CopyCurrencyAddress value={donationAddresses.space}/>
 						</div>
 						<div className="section">
 							<label>BTC:</label>
 							<CopyCurrencyAddress value={donationAddresses.btc}/>
+						</div>
+						<div className="section">
+							<label>KMD:</label>
+							<CopyCurrencyAddress value={donationAddresses.kmd}/>
 						</div>
 					</>
 				</Modal>

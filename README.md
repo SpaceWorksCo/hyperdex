@@ -5,23 +5,17 @@
 	<br>
 	<p>Grandma-Friendly Atomic Swaps</p>
 	<br>
-	<a title="Downloads" href="https://github.com/atomiclabs/hyperdex/releases/latest">
+	<a title="Downloads" href="https://github.com/spaceworksco/hyperdex/releases/latest">
 		<img src="https://img.shields.io/github/downloads/atomiclabs/hyperdex/total.svg">
-	</a>
-	<a title="Crowdin" target="_blank" href="https://crowdin.com/project/hyperdex">
-		<img src="https://d322cqt584bo4o.cloudfront.net/hyperdex/localized.svg">
 	</a>
 	<a title="MIT License" href="LICENSE">
 		<img src="https://img.shields.io/github/license/atomiclabs/hyperdex.svg">
 	</a>
-	<a title="Release" href="https://github.com/atomiclabs/hyperdex/releases/latest">
+	<a title="Release" href="https://github.com/spaceworksco/hyperdex/releases/latest">
 		<img src="https://badgen.net/github/release/atomiclabs/hyperdex/">
 	</a>
-	<a title="Keybase" target="_blank" href="https://keybase.io/hyperdex">
-		<img src="https://badgen.net/keybase/pgp/hyperdex">
-	</a>
-	<a title="Follow on Twitter" target="_blank" href="https://twitter.com/HyperDEXApp">
-		<img src="https://img.shields.io/twitter/follow/HyperDexApp.svg?style=social&label=Follow">
+	<!-- <a title="Follow on Twitter" target="_blank" href="https://twitter.com/HyperDEXApp">
+		<img src="https://img.shields.io/twitter/follow/HyperDexApp.svg?style=social&label=Follow"> -->
 	</a>
 	<br>
 	<br>
@@ -30,28 +24,18 @@
 
 ## HyperDEX is a truly decentralised cryptocurrency exchange.
 
-Built on the Komodo Platform's <a href="https://barterdex.supernet.org">BarterDEX</a> network, HyperDEX is entirely peer-to-peer and all trades are made via on-chain atomic swaps. As a result, you are in full custody of your funds the entire time, your private keys never leave your machine.
+Built on the Komodo Platform's <a href="https://atomicdex.io">AtomicDEX</a> network, HyperDEX is entirely peer-to-peer and all trades are made via on-chain atomic swaps. As a result, you are in full custody of your funds the entire time, your private keys never leave your machine.
 
 ## Caveats
 
 ### This software is currently in beta
 
-There is a risk of loss of funds. Only trade in real currency if you can take that risk. We recommend trading the test currencies `RICK` and `MORTY` instead. You can get free `RICK` [here](https://www.atomicexplorer.com/#/faucet/rick) and free `MORTY` [here](https://www.atomicexplorer.com/#/faucet/morty).
+Although loss of funds is unlikely, you should only trade with real currency if you can take that risk. We recommend to try trading with test currencies `RICK` and `MORTY` first. You can get free `RICK` [here](https://www.atomicexplorer.com/#/faucet/rick) and free `MORTY` [here](https://www.atomicexplorer.com/#/faucet/morty).
 
 
 ### HyperDEX is just a GUI
 
-HyperDEX is only a GUI layer on top of the `marketmaker` daemon which connects to the Komodo Platform's BarterDEX network. `marketmaker` is an [independent project](https://github.com/jl777/SuperNET/blob/master/iguana/exchanges/mm.c).
-
-`marketmaker` is currently in the prototype stage and as a result can be quite buggy and unreliable, which will affect HyperDEX usage.
-
-There are some known `marketmaker` issues:
-- Order matching doesn't always succeed.
-- Trades can sometimes get stuck.
-- Poor single threaded performance. (makes the GUI appear laggy)
-- Trades don't always cancel.
-
-There is a rewrite of `marketmaker` in progress which we are expecting to resolve many of these issues.
+HyperDEX is only a GUI layer on top of the `marketmaker` daemon which connects to the Komodo Platform's AtomicDEX network. `marketmaker` is an [independent project](https://github.com/komodoplatform/atomicDEX-API).
 
 ### All marketmaker communication is currently unencrypted
 
@@ -89,9 +73,9 @@ We are planning to add an option to specify the number of confirmations your are
 
 [**Download**](https://github.com/atomiclabs/hyperdex/releases/latest) the `.exe` file.
 
-## Testing
+<!-- ## Testing
 
-Please download the latest [nightly build](https://github.com/atomiclabs/hyperdex-nightlies/releases/latest) and report detailed issues with the "Feedback" button in the app.
+Please download the latest [nightly build](https://github.com/atomiclabs/hyperdex-nightlies/releases/latest) and report detailed issues with the "Feedback" button in the app. -->
 
 ## FAQ
 
@@ -101,7 +85,18 @@ Please download the latest [nightly build](https://github.com/atomiclabs/hyperde
 
 ## Donate
 
-HyperDEX is a free and open source project. You can help support its development by donating to the below addresses:
+HyperDEX is a free and open source project. You can help support its development by donating to the below addresses.
+
+SpaceWorks:
+
+| Symbol  | Address                             |
+| ------- | ----------------------------------- |
+| **SPACE** | `RTUqKVvvxAbyMSKVnQBBL9j459UWspetJu`|
+| **BTC** | `1KCeEz3eMLoQHRxJKEC4EdPrJt1vFRDiUa`|
+| **KMD** | `RTUqKVvvxAbyMSKVnQBBL9j459UWspetJu`|
+
+
+Original HyperDEX developers:
 
 | Symbol  | Address                             |
 | ------- | ----------------------------------- |

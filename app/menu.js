@@ -54,7 +54,7 @@ const createHelpMenu = () => {
 		}),
 		openUrlMenuItem({
 			label: t('help.reportSecurityIssue'),
-			url: 'mailto:hyperdex@protonmail.com',
+			url: 'mailto:hyperdex.security@spaceworks.co',
 		}),
 		{
 			label: t('help.reportIssue'),
@@ -73,7 +73,7 @@ const createHelpMenu = () => {
 				icon: path.join(__dirname, 'static/icon.png'),
 				// FIXME: Doing it like this for now so I don't have to update all the translations
 				title: t('help.about', {appName: ''}).trim(),
-				copyright: 'Copyright © Luke Childs',
+				copyright: 'Copyright © SpaceWorks',
 			})
 		);
 	}

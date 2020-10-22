@@ -110,13 +110,14 @@ const SwapItem = ({style, swap, showCancel, openSwap}) => (
 		</div>
 		<div className="buttons">
 			{
-				/* TODO: Add back the cancel button when https://github.com/artemii235/SuperNET/issues/463 is fixed
+				/* Sindre wanted: Add back the cancel button when https://github.com/artemii235/SuperNET/issues/463 is fixed
+				TODO: Make the button available only for open orders. Not for active swaps.*/
 				showCancel && (
 					<div className="cancel">
 						<CancelButton swap={swap}/>
 					</div>
 				)
-				*/
+
 			}
 		</div>
 	</div>

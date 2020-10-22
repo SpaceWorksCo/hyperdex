@@ -274,7 +274,7 @@ export default class Api {
 
 		const response = await this.request({
 			method: 'cancel_order',
-			uuid,
+			uuid: uuid,
 		});
 
 		if (response.error) {

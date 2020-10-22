@@ -156,7 +156,7 @@
 		"asarUnpack": [
 			"marketmaker/bin"
 		],
-		"appId": "com.lukechilds.hyperdex",
+		"appId": "com.spaceworks.hyperdex",
 		"mac": {
 			"category": "public.app-category.finance",
 			"electronUpdaterCompatibility": ">=4",

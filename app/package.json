@@ -1,15 +1,15 @@
 {
   "name": "hyperdex",
   "productName": "HyperDEX",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "description": "Grandma-Friendly Atomic Swaps",
   "license": "MIT",
-  "repository": "atomiclabs/hyperdex",
+  "repository": "spaceworksco/hyperdex",
   "author": {
-	"name": "Luke Childs",
-	"email": "lukechilds123@gmail.com",
-	"url": "http://lukechilds.co.uk"
+	"name": "SpaceWorks",
+	"email": "hyperdex@spaceworks.co",
+	"url": "http://spaceworks.co/hyperdex"
   },
   "dependencies": {
 	"@sindresorhus/slugify": "^0.3.0",

@@ -1,9 +1,9 @@
 'use strict';
 const {is} = require('electron-util');
 
-exports.websiteUrl = 'https://hyperdex.app';
+exports.websiteUrl = 'https://spaceworks.co/hyperdex';
 
-exports.repoUrl = 'https://github.com/atomiclabs/hyperdex';
+exports.repoUrl = 'https://github.com/spaceworksco/hyperdex';
 
 exports.minWindowSize = {
 	width: 1060,
@@ -24,35 +24,22 @@ exports.appViews = [
 ];
 
 exports.defaultEnabledCurrencies = [
-	'KMD',
 	'SPACE',
+	'KMD',
+	'BTC',
 
-	// These are left out for now.
-	// TODO: Revise this list when HyperDEX is more mature.
-	// 'BCH',
-	// 'BTC',
-	// 'DASH',
-	// 'HUSH',
-	// 'LTC',
-	// 'MSHARK',
-	// 'MYTH',
-	// 'OOT',
-	// 'REVS',
-	// 'VTC',
-	// 'ZEC',
 ];
 
 exports.alwaysEnabledCurrencies = [
-	'KMD',
 	'SPACE',
+	'KMD',
 ];
 
 exports.ignoreExternalPrice = new Set([
 	'SPACE',
-	'CALL',
 	'MORTY',
-	'REVS',
 	'RICK',
+	'REVS',
 	'SUPERNET',
 ]);
 

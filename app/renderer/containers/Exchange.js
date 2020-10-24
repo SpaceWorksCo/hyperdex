@@ -86,13 +86,16 @@ class ExchangeContainer extends SuperContainer {
 		}
 
 		if (!_.isEqual(this.state.orderBook, orderBook)) {
+			// sort orderbook
+			orderBook.asks = _.orderBy(orderBook.asks, ['price'], ['asc']);
+			orderBook.bids = _.orderBy(orderBook.bids, ['price'], ['desc']);
 			this.setState({orderBook});
 		}
 	}
 
 	async watchOrderBook() {
 		if (!this.stopWatchingOrderBook) {
-			this.stopWatchingOrderBook = await fireEvery({seconds: 2}, async () => {
+			this.stopWatchingOrderBook = await fireEvery({seconds: 5}, async () => {
 				await this.fetchOrderBook();
 			});
 		}

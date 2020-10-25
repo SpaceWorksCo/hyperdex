@@ -33,9 +33,7 @@ class Intro extends React.Component {
 					</p>
 					<p>Orders can take a while to propagate across the P2P network. You may need to wait a while for the
 						order book to display.</p>
-					<p>An atomic swap is comprised of six on-chain transactions. When trading a currency with high
-						transaction fees, it&apos;s important to slightly increase your price to account for the total
-						transaction fees. This is especially important when trading small amounts.</p>
+					<p>An atomic swap is comprised of six on-chain transactions.</p>
 				</Trans>
 			</Modal>
 		);

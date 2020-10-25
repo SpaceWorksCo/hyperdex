@@ -9,10 +9,10 @@
 		<img src="https://img.shields.io/github/downloads/spaceworksco/hyperdex/total.svg">
 	</a>
 	<a title="MIT License" href="LICENSE">
-		<img src="https://img.shields.io/github/license/atomiclabs/hyperdex.svg">
+		<img src="https://img.shields.io/github/license/spaceworksco/hyperdex.svg">
 	</a>
 	<a title="Release" href="https://github.com/spaceworksco/hyperdex/releases/latest">
-		<img src="https://badgen.net/github/release/atomiclabs/hyperdex/">
+		<img src="https://badgen.net/github/release/spaceworksco/hyperdex/">
 	</a>
 	<!-- <a title="Follow on Twitter" target="_blank" href="https://twitter.com/HyperDEXApp">
 		<img src="https://img.shields.io/twitter/follow/HyperDexApp.svg?style=social&label=Follow"> -->
@@ -61,21 +61,21 @@ We are planning to add an option to specify the number of confirmations your are
 
 ### macOS
 
-[**Download**](https://github.com/atomiclabs/hyperdex/releases/latest) the `.dmg` file.
+[**Download**](https://github.com/spaceworksco/hyperdex/releases/latest) the `.dmg` file.
 
 ### Linux
 
-[**Download**](https://github.com/atomiclabs/hyperdex/releases/latest) the `.AppImage` (recommended), `.snap`, `.deb`, or `.rpm` file.
+[**Download**](https://github.com/spaceworksco/hyperdex/releases/latest) the `.AppImage` (recommended), `.snap`, `.deb`, or `.rpm` file.
 
 *The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
 
 ### Windows
 
-[**Download**](https://github.com/atomiclabs/hyperdex/releases/latest) the `.exe` file.
+[**Download**](https://github.com/spaceworksco/hyperdex/releases/latest) the `.exe` file.
 
 <!-- ## Testing
 
-Please download the latest [nightly build](https://github.com/atomiclabs/hyperdex-nightlies/releases/latest) and report detailed issues with the "Feedback" button in the app. -->
+Please download the latest [nightly build](https://github.com/spaceworksco/hyperdex-nightlies/releases/latest) and report detailed issues with the "Feedback" button in the app. -->
 
 ## FAQ
 

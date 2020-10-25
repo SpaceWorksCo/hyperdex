@@ -6,7 +6,7 @@
 	<p>Grandma-Friendly Atomic Swaps</p>
 	<br>
 	<a title="Downloads" href="https://github.com/spaceworksco/hyperdex/releases/latest">
-		<img src="https://img.shields.io/github/downloads/atomiclabs/hyperdex/total.svg">
+		<img src="https://img.shields.io/github/downloads/spaceworksco/hyperdex/total.svg">
 	</a>
 	<a title="MIT License" href="LICENSE">
 		<img src="https://img.shields.io/github/license/atomiclabs/hyperdex.svg">
@@ -22,7 +22,7 @@
 	<img src="media/screenshots/exchange-view.png" width="898">
 </div>
 
-## HyperDEX is a truly decentralised cryptocurrency exchange.
+## HyperDEX is a truly decentralized cryptocurrency exchange.
 
 Built on the Komodo Platform's <a href="https://atomicdex.io">AtomicDEX</a> network, HyperDEX is entirely peer-to-peer and all trades are made via on-chain atomic swaps. As a result, you are in full custody of your funds the entire time, your private keys never leave your machine.
 

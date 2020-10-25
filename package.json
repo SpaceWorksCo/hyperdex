@@ -9,7 +9,7 @@
 		"start": "yarn && run-p --race start:*",
 		"pack": "webpack && electron-builder --dir",
 		"dist": "webpack --mode=production && electron-builder --macos --linux --windows",
-		"release": "cd app && np --no-publish"
+		"release": "cd app && np --no-publish --no-tests"
 	},
 	"dependencies": {
 		"@babel/register": "^7.4.4",

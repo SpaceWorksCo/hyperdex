@@ -204,7 +204,6 @@ export default class Api {
 
 		const {result} = await this.request({
 			method: options.type,
-			gtc: 1, // TODO: Looks like this is missing from mm v2
 			base: options.baseCurrency,
 			rel: options.quoteCurrency,
 			price: options.price,

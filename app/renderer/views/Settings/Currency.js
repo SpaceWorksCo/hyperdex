@@ -41,7 +41,7 @@ class CurrencySetting extends React.Component {
 	}
 
 	render() {
-		const excludedCurrencies = isDevelopment ? [] : ['RICK', 'MORTY'];
+		const excludedCurrencies = isDevelopment ? [] : [];
 		const currencySymbols = _.without(getCurrencySymbols(), ...excludedCurrencies);
 		const {isUpdatingCurrencies} = settingsContainer.state;
 

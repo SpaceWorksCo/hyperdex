@@ -40,7 +40,7 @@ class Intro extends React.Component {
 						authors or copyright holders are not liable for any damages caused as a result of using this
 						software.</p>
 					<p>By using HyperDEX you are agreeing to the terms of the <ExternalLink
-						url="https://github.com/atomiclabs/hyperdex/blob/master/LICENSE">MIT License</ExternalLink>.</p>
+						url="https://github.com/spaceworksco/hyperdex/blob/master/LICENSE">MIT License</ExternalLink>.</p>
 				</Trans>
 			</Modal>
 		);
